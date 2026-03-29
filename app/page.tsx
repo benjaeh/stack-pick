@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Script from "next/script";
 import type { Metadata } from "next";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import NewsletterForm from "@/components/NewsletterForm";
 import { generateHomepageMetadata, getWebsiteSchema, getOrganizationSchema } from "@/lib/seo";
 
 export const metadata: Metadata = generateHomepageMetadata();
@@ -183,13 +183,7 @@ export default function HomePage() {
             Every week: 3 tools compared, 1 deal you shouldn&apos;t miss.{" "}
             <strong>No spam.</strong>
           </p>
-          {/* ConvertKit embed */}
-          <Script
-            async
-            data-uid="38270535ef"
-            src="https://stack-pick.kit.com/38270535ef/index.js"
-            strategy="lazyOnload"
-          />
+          <NewsletterForm />
         </div>
       </section>
     </>
