@@ -93,9 +93,9 @@ export default function AboutPage() {
         <div className="bg-gray-50 rounded-xl p-6">
           <p className="text-gray-600">
             Stack Pick is built and maintained by{" "}
-            <strong className="text-gray-900">Ben Escalante Huber</strong>, a solo founder
-            based in Sydney, Australia. It&apos;s a one-person operation — every review,
-            every comparison, every line of code is done by Ben.
+            <strong className="text-gray-900">Ben</strong>, a solo founder and self-confessed
+            AI and tech enthusiast who&apos;s obsessed with helping people cut through the noise
+            and choose the tools that actually fit their needs.
           </p>
           <p className="text-gray-600 mt-3">
             Questions? Feedback? Found outdated information?{" "}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import { generateHomepageMetadata, getWebsiteSchema, getOrganizationSchema } from "@/lib/seo";
@@ -100,7 +101,7 @@ export default function HomePage() {
             Browse by category
           </h2>
           <p className="text-gray-500 text-center mb-10">
-            Every tool personally tested. Every recommendation backed by real usage.
+            Every tool tested. Every recommendation backed by real usage.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {featuredCategories.map((cat) => (
@@ -182,22 +183,13 @@ export default function HomePage() {
             Every week: 3 tools compared, 1 deal you shouldn&apos;t miss.{" "}
             <strong>No spam.</strong>
           </p>
-          {/* ConvertKit form embed — replace with your actual form embed code */}
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary"
-              />
-              <button className="bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors text-sm whitespace-nowrap">
-                Get weekly picks →
-              </button>
-            </div>
-            <p className="text-xs text-gray-400 mt-3">
-              Free. Unsubscribe anytime. No spam — ever.
-            </p>
-          </div>
+          {/* ConvertKit embed */}
+          <Script
+            async
+            data-uid="38270535ef"
+            src="https://stack-pick.kit.com/38270535ef/index.js"
+            strategy="lazyOnload"
+          />
         </div>
       </section>
     </>
