@@ -15,8 +15,13 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "https://stack-pick.com"
   ),
   icons: {
-    icon: [{ url: "/images/logo-favicon.svg", type: "image/svg+xml" }],
+    icon: [
+      { url: "/images/logo-favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
   },
+  manifest: "/site.webmanifest",
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
