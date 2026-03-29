@@ -101,7 +101,6 @@ export default function MediaKitPage() {
               { icon: "🧠", name: "Productivity", tools: "Notion, Obsidian, Mem, Logseq" },
               { icon: "📋", name: "Project Management", tools: "ClickUp, Asana, Monday, Linear" },
               { icon: "🎬", name: "AI Video", tools: "Descript, Runway, Synthesia, HeyGen" },
-              { icon: "👤", name: "AI for Freelancers", tools: "Curated stacks for independents" },
             ].map((cat) => (
               <div key={cat.name} className="border border-gray-100 rounded-lg p-4">
                 <p className="text-2xl mb-2">{cat.icon}</p>
