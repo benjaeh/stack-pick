@@ -79,7 +79,7 @@ export default function MediaKitPage() {
           <div className="grid grid-cols-4 gap-4">
             {[
               { value: "25+", label: "Tools reviewed" },
-              { value: "6", label: "Categories covered" },
+              { value: "5", label: "Categories covered" },
               { value: "0", label: "Sponsored rankings" },
               { value: "Weekly", label: "Update frequency" },
             ].map((stat) => (
