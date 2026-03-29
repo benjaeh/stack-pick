@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getBestOfBySlug, getToolById, bestofs } from "@/lib/tools";
+import { getBestOfBySlug, getToolById, getComparisonBySlug, bestofs } from "@/lib/tools";
 import { generateBestOfMetadata } from "@/lib/seo";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
@@ -26,6 +26,9 @@ export default async function BestOfPage({ params }: Props) {
   if (!bestof) notFound();
 
   const tools = bestof.toolIds.map((id) => getToolById(id)).filter(Boolean);
+  const relatedComparisons = (bestof.relatedComparisons || [])
+    .map((slug) => getComparisonBySlug(slug))
+    .filter(Boolean);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -212,6 +215,48 @@ export default async function BestOfPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        {/* Compare these tools head-to-head */}
+        {relatedComparisons.length > 0 && (
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Compare These Tools Head-to-Head
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {relatedComparisons.map((c) => {
+                if (!c) return null;
+                const t1 = getToolById(c.tool1Id);
+                const t2 = getToolById(c.tool2Id);
+                const winner = getToolById(c.winner);
+                return (
+                  <Link
+                    key={c.slug}
+                    href={`/vs/${c.slug}`}
+                    className="group border border-gray-200 rounded-xl p-5 hover:border-primary hover:shadow-md transition-all"
+                  >
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                        {t1?.name}
+                      </span>
+                      <span className="text-gray-300">vs</span>
+                      <span className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                        {t2?.name}
+                      </span>
+                    </div>
+                    {winner && (
+                      <p className="text-xs text-gray-400 mb-3">
+                        Our pick: <span className="text-primary font-semibold">{winner.name}</span>
+                      </p>
+                    )}
+                    <span className="text-primary text-sm font-medium group-hover:underline">
+                      Read comparison →
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
       </div>
     </>
   );

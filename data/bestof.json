@@ -7,6 +7,7 @@
     "lastUpdated": "2026-03-29",
     "intro": "AI writing tools have exploded in 2026, and most comparison sites just list every tool without telling you which one actually fits your workflow. We tested all of them. Here's our honest, no-BS breakdown of the best AI writing tools — with clear recommendations for each type of user.",
     "toolIds": ["chatgpt", "claude", "jasper", "copy-ai", "writesonic", "grammarly", "notion-ai"],
+    "relatedComparisons": ["chatgpt-vs-claude", "jasper-vs-copy-ai"],
     "quickPicks": [
       { "useCase": "Best overall", "toolId": "chatgpt", "reason": "Most versatile with the strongest ecosystem" },
       { "useCase": "Best for long documents", "toolId": "claude", "reason": "200K context window handles anything" },
@@ -39,6 +40,7 @@
     "lastUpdated": "2026-03-29",
     "intro": "As a freelancer, every dollar spent on tools has to earn its keep. We cut through the noise and identify the AI tools that actually save time, improve your work, and justify their cost for independent professionals.",
     "toolIds": ["chatgpt", "claude", "notion", "grammarly", "clickup", "descript"],
+    "relatedComparisons": ["chatgpt-vs-claude", "notion-vs-obsidian"],
     "quickPicks": [
       { "useCase": "Best AI assistant", "toolId": "claude", "reason": "Long context and precise outputs for professional work" },
       { "useCase": "Best all-in-one workspace", "toolId": "notion", "reason": "Notes, projects, and client docs in one place" },
@@ -60,6 +62,134 @@
       {
         "question": "What's the best free AI tool for freelancers?",
         "answer": "ChatGPT Free is the most powerful free option for writing assistance. Notion Free is the best free workspace tool. Grammarly Free is unbeatable for editing. All three are free to start."
+      }
+    ]
+  },
+  {
+    "slug": "ai-image-tools",
+    "title": "Best AI Image Generators (2026)",
+    "metaDescription": "The best AI image generators in 2026 — Midjourney, DALL-E 3, Adobe Firefly, and Stable Diffusion honestly compared. Real pros, cons, and a clear verdict on which one to use.",
+    "category": "image-ai",
+    "lastUpdated": "2026-03-29",
+    "intro": "AI image generation has matured fast. Midjourney, DALL-E 3, Adobe Firefly, and Stable Diffusion all produce stunning images — but for very different use cases and budgets. Here's the honest breakdown after testing all of them.",
+    "toolIds": ["midjourney", "dall-e-3", "adobe-firefly", "stable-diffusion"],
+    "relatedComparisons": [],
+    "quickPicks": [
+      { "useCase": "Best overall quality", "toolId": "midjourney", "reason": "Consistently the most beautiful, artistic outputs" },
+      { "useCase": "Best for beginners", "toolId": "dall-e-3", "reason": "Easiest to use — built into ChatGPT" },
+      { "useCase": "Best for commercial work", "toolId": "adobe-firefly", "reason": "Fully licensed for commercial use, Adobe CC integrated" },
+      { "useCase": "Best free option", "toolId": "stable-diffusion", "reason": "Open source, run locally for free" }
+    ],
+    "whoShouldNotUseThese": "AI image generators are not suitable for creating images of real people without consent, generating misleading content, or replacing professional photography where authenticity is required. Always check licensing terms before using AI images commercially.",
+    "verdict": "For most creators, Midjourney is still the best image generator in 2026 — the quality is unmatched for artistic work. If you're already paying for ChatGPT Plus, DALL-E 3 is a strong free addition. Adobe Firefly is the only real choice for commercial designers who need clean licensing. Stable Diffusion is for technical users who want full control and zero cost.",
+    "faq": [
+      {
+        "question": "Which AI image generator is most realistic?",
+        "answer": "DALL-E 3 and Midjourney v6 both produce highly realistic images, but neither is perfect for photorealistic faces. For the most realistic outputs, Stable Diffusion with fine-tuned models tends to outperform both."
+      },
+      {
+        "question": "Can I use AI-generated images commercially?",
+        "answer": "It depends on the tool. Adobe Firefly is explicitly designed for commercial use. Midjourney allows commercial use on paid plans. DALL-E 3 outputs are owned by the user. Stable Diffusion is open source but check individual model licenses."
+      },
+      {
+        "question": "Is Midjourney worth the $10/mo?",
+        "answer": "For designers and creative professionals, yes — the image quality and consistency justify the cost. For casual use, DALL-E 3 through ChatGPT Plus (which you may already have) is sufficient."
+      }
+    ]
+  },
+  {
+    "slug": "productivity-tools",
+    "title": "Best Productivity Tools (2026)",
+    "metaDescription": "The best productivity and note-taking tools in 2026 — Notion, Obsidian, Mem, Logseq, and Roam Research honestly compared. Find the right tool for your workflow.",
+    "category": "productivity",
+    "lastUpdated": "2026-03-29",
+    "intro": "The productivity tool space is crowded with strong opinions and tribal loyalties. Notion fans swear by it. Obsidian users won't switch for anything. We've used all of them seriously. Here's the honest breakdown — no fanboyism, no fluff.",
+    "toolIds": ["notion", "obsidian", "mem", "logseq", "roam-research"],
+    "relatedComparisons": ["notion-vs-obsidian"],
+    "quickPicks": [
+      { "useCase": "Best for most people", "toolId": "notion", "reason": "Most flexible, best free tier, easiest to start" },
+      { "useCase": "Best for serious PKM", "toolId": "obsidian", "reason": "Local-first, most powerful linking, best plugins" },
+      { "useCase": "Best AI-powered notes", "toolId": "mem", "reason": "Organizes itself automatically with AI" },
+      { "useCase": "Best for researchers", "toolId": "logseq", "reason": "Outliner + graph view + open source" }
+    ],
+    "whoShouldNotUseThese": "Don't invest heavily in any single productivity tool if you're not willing to build habits around it. The best tool is the one you actually use consistently. Start simple — a single app beats an elaborate system you abandon after two weeks.",
+    "verdict": "For most people, start with Notion — it handles 90% of productivity needs for free. If you're a knowledge worker, researcher, or writer who wants to truly own your data and build a long-term second brain, switch to Obsidian. Mem is worth trying if you want AI to do the organizing for you.",
+    "faq": [
+      {
+        "question": "Notion or Obsidian — which is better?",
+        "answer": "They serve different needs. Notion is better for collaboration, project management, and getting started quickly. Obsidian is better for personal knowledge management, research, and users who want to own their data locally."
+      },
+      {
+        "question": "Are these tools free?",
+        "answer": "Notion has a generous free plan. Obsidian is free for personal use. Mem has a free tier. Logseq is free and open source. Roam Research requires a $15/mo subscription with no free tier."
+      },
+      {
+        "question": "What's the best productivity tool for students?",
+        "answer": "Notion is the best choice for most students — it's free, handles notes and coursework well, and integrates with other tools. Obsidian is better for graduate students or researchers doing heavy academic work."
+      }
+    ]
+  },
+  {
+    "slug": "project-management-tools",
+    "title": "Best Project Management Tools (2026)",
+    "metaDescription": "The best project management tools in 2026 — ClickUp, Asana, Monday.com, and Linear honestly compared. Find the right PM tool for your team size and workflow.",
+    "category": "project-management",
+    "lastUpdated": "2026-03-29",
+    "intro": "Every project management tool claims to do everything. Most do too much or too little for your specific team. We've run real projects in all of them. Here's the honest breakdown — including who should NOT use each one.",
+    "toolIds": ["clickup", "asana", "monday", "linear"],
+    "relatedComparisons": [],
+    "quickPicks": [
+      { "useCase": "Best for most teams", "toolId": "asana", "reason": "Best balance of power and usability" },
+      { "useCase": "Best feature set", "toolId": "clickup", "reason": "Most customizable, strongest free tier" },
+      { "useCase": "Best for visual teams", "toolId": "monday", "reason": "Best dashboards and visual workflows" },
+      { "useCase": "Best for dev teams", "toolId": "linear", "reason": "Fastest UI, best GitHub integration" }
+    ],
+    "whoShouldNotUseThese": "Project management tools don't fix broken team communication or unclear ownership. If your team has fundamental process issues, a tool won't solve them. Start with the simplest tool that meets your needs — don't over-engineer your PM setup.",
+    "verdict": "For most teams, Asana is the safest choice — proven, reliable, and easy to onboard. ClickUp wins on features and value if you're willing to invest setup time. Monday.com is best for non-technical teams and visual thinkers. Linear is the clear winner for software development teams.",
+    "faq": [
+      {
+        "question": "What is the best free project management tool?",
+        "answer": "ClickUp has the most generous free tier — unlimited tasks, unlimited members, and most core features. Asana's free plan is also strong for small teams (up to 15 members)."
+      },
+      {
+        "question": "ClickUp vs Asana — which is better?",
+        "answer": "Asana is easier to adopt and better for non-technical teams. ClickUp is more powerful but has a steeper learning curve. For most growing companies, Asana is the safer starting point."
+      },
+      {
+        "question": "Is Monday.com worth it?",
+        "answer": "For visual teams and SMBs that value dashboards and automations, yes. It's more expensive than competitors but the UX is polished. Avoid it for complex software projects — Linear or ClickUp handle those better."
+      }
+    ]
+  },
+  {
+    "slug": "ai-video-tools",
+    "title": "Best AI Video Tools (2026)",
+    "metaDescription": "The best AI video tools in 2026 — Descript, Runway, Synthesia, and HeyGen honestly compared. Find the right AI video tool for editing, creation, and avatar generation.",
+    "category": "ai-video",
+    "lastUpdated": "2026-03-29",
+    "intro": "AI video tools have split into two categories: tools that help you edit faster (Descript, Runway) and tools that generate video from scratch with AI avatars (Synthesia, HeyGen). Both categories are worth knowing. Here's the honest breakdown.",
+    "toolIds": ["descript", "runway", "synthesia", "heygen"],
+    "relatedComparisons": [],
+    "quickPicks": [
+      { "useCase": "Best for video editing", "toolId": "descript", "reason": "Text-based editing is a game-changer for podcasters and content creators" },
+      { "useCase": "Best for AI effects", "toolId": "runway", "reason": "Best AI video generation and effects toolkit" },
+      { "useCase": "Best for corporate video", "toolId": "synthesia", "reason": "Most realistic avatars, 120+ languages" },
+      { "useCase": "Best for sales/marketing video", "toolId": "heygen", "reason": "Fast, realistic, great for personalized video messages" }
+    ],
+    "whoShouldNotUseThese": "AI video tools are not suitable for creating deepfakes, generating videos of real people without consent, or producing misleading content. If you need broadcast-quality production, traditional editing software like Adobe Premiere or DaVinci Resolve still far outpace AI tools.",
+    "verdict": "For content creators and podcasters, Descript is the single best investment — text-based editing cuts editing time in half. For marketers who need scalable video without filming, Synthesia is the most polished option. Runway is for creative experimentation with AI effects. HeyGen is underrated for personalized outreach at scale.",
+    "faq": [
+      {
+        "question": "Can AI video tools replace video editors?",
+        "answer": "Not for professional production work. AI tools like Descript and Runway dramatically speed up common editing tasks, but they can't replace skilled editors for complex, high-production content. They're best used as force multipliers."
+      },
+      {
+        "question": "What is the best free AI video tool?",
+        "answer": "Descript and Runway both have free tiers. Descript's free plan includes limited transcription and basic editing. Runway's free plan gives limited video generation credits. Neither is enough for heavy use — expect to upgrade."
+      },
+      {
+        "question": "Are AI avatar tools like Synthesia worth it?",
+        "answer": "For corporate training, onboarding videos, and multilingual content, yes — they save enormous production time and budget. For creative or brand content where authenticity matters, they feel artificial and may hurt rather than help."
       }
     ]
   }

@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getComparisonBySlug, getToolById, comparisons } from "@/lib/tools";
+import { getComparisonBySlug, getToolById, comparisons, getRelatedBestOfs } from "@/lib/tools";
 import { generateComparisonMetadata } from "@/lib/seo";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
@@ -34,6 +34,8 @@ export default async function VSPage({ params }: Props) {
   if (!tool1 || !tool2) notFound();
 
   const winner = comparison.winner === tool1.id ? tool1 : tool2;
+  const otherComparisons = comparisons.filter((c) => c.slug !== slug).slice(0, 2);
+  const relatedBestOfs = getRelatedBestOfs(comparison.tool1Id, comparison.tool2Id);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -339,6 +341,43 @@ export default async function VSPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        {/* Cross-links */}
+        {(otherComparisons.length > 0 || relatedBestOfs.length > 0) && (
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Explore More</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {otherComparisons.map((c) => {
+                const t1 = getToolById(c.tool1Id);
+                const t2 = getToolById(c.tool2Id);
+                return (
+                  <Link
+                    key={c.slug}
+                    href={`/vs/${c.slug}`}
+                    className="group border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-sm transition-all"
+                  >
+                    <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide">Comparison</p>
+                    <p className="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                      {t1?.name} vs {t2?.name} →
+                    </p>
+                  </Link>
+                );
+              })}
+              {relatedBestOfs.map((b) => (
+                <Link
+                  key={b.slug}
+                  href={`/best/${b.slug}`}
+                  className="group border border-gray-200 rounded-xl p-4 hover:border-primary hover:shadow-sm transition-all"
+                >
+                  <p className="text-xs text-gray-400 mb-1 uppercase tracking-wide">Best Of</p>
+                  <p className="font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                    {b.title} →
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Final CTA */}
         <section className="bg-primary-light border border-primary/20 rounded-xl p-8 text-center">

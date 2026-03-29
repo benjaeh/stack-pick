@@ -13,7 +13,10 @@ const featuredCategories = [
     description:
       "ChatGPT vs Claude, Jasper, Copy.ai, Writesonic and more. Find the best AI writing tool for your workflow.",
     href: "/best/ai-writing-tools",
-    comparisons: ["ChatGPT vs Claude", "Jasper vs Copy.ai"],
+    comparisons: [
+      { label: "ChatGPT vs Claude", href: "/vs/chatgpt-vs-claude" },
+      { label: "Jasper vs Copy.ai", href: "/vs/jasper-vs-copy-ai" },
+    ],
   },
   {
     icon: "🎨",
@@ -21,7 +24,9 @@ const featuredCategories = [
     description:
       "Midjourney, DALL-E 3, Adobe Firefly, Stable Diffusion. Which image generator is worth your money?",
     href: "/best/ai-image-tools",
-    comparisons: ["Midjourney vs DALL-E 3"],
+    comparisons: [
+      { label: "Best Image AI Tools", href: "/best/ai-image-tools" },
+    ],
   },
   {
     icon: "🧠",
@@ -29,14 +34,16 @@ const featuredCategories = [
     description:
       "Notion, Obsidian, Mem, Logseq. Build your ultimate second brain with the right tool.",
     href: "/best/productivity-tools",
-    comparisons: ["Notion vs Obsidian"],
+    comparisons: [
+      { label: "Notion vs Obsidian", href: "/vs/notion-vs-obsidian" },
+    ],
   },
 ];
 
 const moreCategories = [
   { icon: "📋", title: "Project Management", href: "/best/project-management-tools" },
   { icon: "🎬", title: "AI Video", href: "/best/ai-video-tools" },
-  { icon: "🔄", title: "Alternatives", href: "/best/ai-writing-tools" },
+  { icon: "📊", title: "All Categories", href: "/best" },
 ];
 
 export default function HomePage() {
@@ -117,12 +124,13 @@ export default function HomePage() {
                 <p className="text-gray-500 text-sm mb-4">{cat.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {cat.comparisons.map((comp) => (
-                    <span
-                      key={comp}
-                      className="text-xs bg-primary-light text-primary px-2 py-1 rounded-full font-medium"
+                    <Link
+                      key={comp.href}
+                      href={comp.href}
+                      className="text-xs bg-primary-light text-primary hover:bg-primary hover:text-white px-2 py-1 rounded-full font-medium transition-colors"
                     >
-                      {comp}
-                    </span>
+                      {comp.label}
+                    </Link>
                   ))}
                 </div>
               </Link>

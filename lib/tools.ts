@@ -53,6 +53,7 @@ export interface BestOf {
   lastUpdated: string;
   intro: string;
   toolIds: string[];
+  relatedComparisons: string[];
   quickPicks: { useCase: string; toolId: string; reason: string }[];
   whoShouldNotUseThese: string;
   verdict: string;
@@ -85,4 +86,15 @@ export function getBestOfBySlug(slug: string): BestOf | undefined {
 
 export function formatRating(rating: number): string {
   return `${rating}/10`;
+}
+
+export function getBestOfsByCategory(category: string): BestOf[] {
+  return bestofs.filter((b) => b.category === category);
+}
+
+export function getRelatedBestOfs(tool1Id: string, tool2Id: string): BestOf[] {
+  const tool1 = getToolById(tool1Id);
+  const tool2 = getToolById(tool2Id);
+  const categories = new Set([tool1?.category, tool2?.category].filter(Boolean));
+  return bestofs.filter((b) => categories.has(b.category));
 }
