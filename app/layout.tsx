@@ -38,6 +38,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Impact.com verification */}
+        <meta name="impact-site-verification" value="1ff62df6-0590-46c2-b938-98be20668cd4" />
         {/* Google Analytics */}
         {GA_ID && GA_ID !== "YOUR_GA_ID_HERE" && (
           <>
