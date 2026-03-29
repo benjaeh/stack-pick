@@ -38,12 +38,26 @@ const featuredCategories = [
       { label: "Notion vs Obsidian", href: "/vs/notion-vs-obsidian" },
     ],
   },
-];
-
-const moreCategories = [
-  { icon: "📋", title: "Project Management", href: "/best/project-management-tools" },
-  { icon: "🎬", title: "AI Video", href: "/best/ai-video-tools" },
-  { icon: "📊", title: "All Categories", href: "/best" },
+  {
+    icon: "📋",
+    title: "Project Management",
+    description:
+      "ClickUp, Asana, Monday.com, Linear. Find the right PM tool for your team — without wasting months on the wrong one.",
+    href: "/best/project-management-tools",
+    comparisons: [
+      { label: "Best PM Tools", href: "/best/project-management-tools" },
+    ],
+  },
+  {
+    icon: "🎬",
+    title: "AI Video",
+    description:
+      "Descript, Runway, Synthesia, HeyGen. Edit video faster with AI — or generate it from scratch.",
+    href: "/best/ai-video-tools",
+    comparisons: [
+      { label: "Best AI Video Tools", href: "/best/ai-video-tools" },
+    ],
+  },
 ];
 
 export default function HomePage() {
@@ -133,26 +147,6 @@ export default function HomePage() {
                     </Link>
                   ))}
                 </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* More categories */}
-      <section className="pb-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-3 gap-4">
-            {moreCategories.map((cat) => (
-              <Link
-                key={cat.title}
-                href={cat.href}
-                className="flex items-center gap-3 bg-gray-50 hover:bg-primary-light border border-gray-100 hover:border-primary rounded-lg px-4 py-3 transition-all group"
-              >
-                <span className="text-2xl">{cat.icon}</span>
-                <span className="font-medium text-gray-700 group-hover:text-primary text-sm transition-colors">
-                  {cat.title}
-                </span>
               </Link>
             ))}
           </div>
