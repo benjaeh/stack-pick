@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png" }],
   },
   manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "Stack Pick",
+  },
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
