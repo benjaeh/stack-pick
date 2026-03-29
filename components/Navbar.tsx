@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -20,7 +21,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-            <span className="text-xl font-bold text-primary">Stack Pick</span>
+            <Image
+              src="/images/logo-horizontal.svg"
+              alt="Stack Pick"
+              width={180}
+              height={36}
+              priority
+              unoptimized
+            />
           </Link>
 
           {/* Desktop nav links */}

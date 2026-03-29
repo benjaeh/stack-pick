@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <!-- Mini icon -->
+  <g transform="translate(8,8)">
+    <!-- Bars -->
+    <rect x="4" y="8" width="34" height="9" rx="3" fill="#1A6BB5"/>
+    <rect x="4" y="21" width="34" height="9" rx="3" fill="#5594CA"/>
+    <rect x="4" y="34" width="34" height="9" rx="3" fill="#91BFE4"/>
+    <!-- Circle badge -->
+    <circle cx="52" cy="27" r="11" fill="#1A6BB5"/>
+    <!-- Checkmark -->
+    <path d="M 46 27 L 50 31 L 58 22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="82" y="50" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30">
+    <tspan font-weight="700" fill="#1A6BB5">Stack</tspan><tspan font-weight="400" fill="#333333"> Pick</tspan>
+  </text>
+</svg>
