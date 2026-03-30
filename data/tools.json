@@ -473,5 +473,35 @@
     "notGoodAt": "Highly specialized industry content",
     "lastUpdated": "2026-03-29",
     "status": "Published"
+  },
+  {
+    "id": "gemini",
+    "name": "Google Gemini",
+    "slug": "gemini",
+    "category": "ai-writing",
+    "tagline": "Google's flagship AI assistant, built into the Google ecosystem",
+    "website": "https://gemini.google.com",
+    "affiliateUrl": "",
+    "pricing": "Free, Advanced from $19.99/mo",
+    "hasFree": true,
+    "startingPrice": 19.99,
+    "rating": 8,
+    "bestFor": "Google Workspace users, research, multimodal tasks",
+    "pros": [
+      "Deep integration with Google Workspace (Docs, Gmail, Drive)",
+      "Multimodal by default — handles text, images, and code",
+      "Real-time internet access built in",
+      "Generous free tier",
+      "Gemini Advanced is genuinely competitive with GPT-4o"
+    ],
+    "cons": [
+      "Inconsistent quality across Gemini versions",
+      "Less precise instruction-following than Claude",
+      "Privacy concerns for users avoiding Google data collection",
+      "Advanced features require Google One subscription"
+    ],
+    "notGoodAt": "Users who need privacy from big tech, or complex long-form document analysis",
+    "lastUpdated": "2026-03-30",
+    "status": "Published"
   }
 ]
