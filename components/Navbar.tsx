@@ -4,6 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import SearchBar from "@/components/SearchBar";
+import comparisonsData from "@/data/comparisons.json";
+import toolsData from "@/data/tools.json";
+import bestofData from "@/data/bestof.json";
+import type { Comparison, Tool, BestOf } from "@/lib/tools";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +17,7 @@ export default function Navbar() {
   const navLinks = [
     { href: "/vs", label: "Compare" },
     { href: "/best", label: "Best Tools" },
+    { href: "/compare", label: "AI vs AI" },
     { href: "/about", label: "About" },
   ];
 
@@ -46,6 +52,11 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <SearchBar
+              comparisons={comparisonsData as Comparison[]}
+              tools={toolsData as Tool[]}
+              bestofs={bestofData as BestOf[]}
+            />
           </div>
 
           {/* Right side: CTA + hamburger */}

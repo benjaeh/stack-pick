@@ -183,8 +183,13 @@ export default async function VSPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Pros & Cons</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Tool 1 */}
-            <div className="border border-gray-200 rounded-xl p-5">
-              <h3 className="font-bold text-gray-900 text-lg mb-4">{tool1.name}</h3>
+            <div className={`border rounded-xl p-5 ${comparison.winner === tool1.id ? 'border-primary/30 bg-primary-light/30' : 'border-gray-200'}`}>
+              <div className="flex items-center gap-2 mb-4">
+                <h3 className="font-bold text-gray-900 text-lg">{tool1.name}</h3>
+                {comparison.winner === tool1.id && (
+                  <span className="text-xs bg-primary text-white px-2 py-0.5 rounded-full font-semibold">Winner</span>
+                )}
+              </div>
               <div className="mb-4">
                 <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-2">Pros</p>
                 <ul className="space-y-1">
@@ -210,7 +215,7 @@ export default async function VSPage({ params }: Props) {
             </div>
 
             {/* Tool 2 */}
-            <div className="border border-primary/30 rounded-xl p-5 bg-primary-light/30">
+            <div className={`border rounded-xl p-5 ${comparison.winner === tool2.id ? 'border-primary/30 bg-primary-light/30' : 'border-gray-200'}`}>
               <div className="flex items-center gap-2 mb-4">
                 <h3 className="font-bold text-gray-900 text-lg">{tool2.name}</h3>
                 {comparison.winner === tool2.id && (
@@ -242,6 +247,26 @@ export default async function VSPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* Mid-page CTA */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-gray-50 border border-gray-200 rounded-xl p-5 mb-12">
+          <div>
+            <p className="text-sm font-semibold text-gray-900">
+              Our pick: <span className="text-primary">{winner.name}</span>
+            </p>
+            <p className="text-xs text-gray-500 mt-0.5">
+              {winner.hasFree ? "Free tier available — no credit card required" : `Plans from $${winner.startingPrice}/mo`}
+            </p>
+          </div>
+          <a
+            href={winner.affiliateUrl || winner.website}
+            target="_blank"
+            rel={winner.affiliateUrl ? "noopener noreferrer sponsored" : "noopener noreferrer"}
+            className="shrink-0 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-2.5 rounded-lg transition-colors text-sm whitespace-nowrap"
+          >
+            Try {winner.name} {winner.hasFree ? "free" : "now"} →
+          </a>
+        </div>
 
         {/* What it does NOT do well — Radical Honesty */}
         <section className="mb-12">

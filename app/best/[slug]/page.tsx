@@ -257,6 +257,25 @@ export default async function BestOfPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        {/* Bottom CTA */}
+        <section className="bg-primary-light border border-primary/20 rounded-xl p-8 text-center mt-12">
+          <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
+            Stack Pick Recommends
+          </p>
+          <h2 className="text-xl font-bold text-gray-900 mb-2">
+            Not sure which tool to pick?
+          </h2>
+          <p className="text-gray-600 text-sm mb-5">
+            Browse all our honest comparisons — no sponsored rankings, ever.
+          </p>
+          <Link
+            href="/vs"
+            className="inline-block bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            See all comparisons →
+          </Link>
+        </section>
       </div>
     </>
   );

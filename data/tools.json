@@ -503,5 +503,95 @@
     "notGoodAt": "Users who need privacy from big tech, or complex long-form document analysis",
     "lastUpdated": "2026-03-30",
     "status": "Published"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "slug": "perplexity",
+    "category": "ai-writing",
+    "tagline": "The AI answer engine that cites its sources",
+    "website": "https://www.perplexity.ai",
+    "affiliateUrl": "",
+    "pricing": "Free, Pro from $20/mo",
+    "hasFree": true,
+    "startingPrice": 20,
+    "rating": 8,
+    "bestFor": "Research, fact-checking, real-time information with citations",
+    "pros": [
+      "Cites sources for every answer — verifiable",
+      "Real-time web access built-in",
+      "Free tier is genuinely useful",
+      "Clean, focused interface with no fluff",
+      "Pro Search goes deeper on complex queries"
+    ],
+    "cons": [
+      "Not a writing assistant — it answers questions, not drafts content",
+      "Citations can occasionally be outdated or misattributed",
+      "Less capable at creative or generative tasks",
+      "No image generation"
+    ],
+    "notGoodAt": "Content creation, writing drafts, or anything beyond answering questions. Perplexity is a research tool, not an AI writing assistant.",
+    "lastUpdated": "2026-04-11",
+    "status": "Published"
+  },
+  {
+    "id": "canva-ai",
+    "name": "Canva AI",
+    "slug": "canva-ai",
+    "category": "image-ai",
+    "tagline": "AI design tools built into the world's most popular design platform",
+    "website": "https://www.canva.com",
+    "affiliateUrl": "",
+    "pricing": "Free, Pro from $15/mo",
+    "hasFree": true,
+    "startingPrice": 15,
+    "rating": 8,
+    "bestFor": "Social media graphics, presentations, and marketing materials",
+    "pros": [
+      "Already inside Canva — no new tool to learn",
+      "Magic Design, Magic Write, and AI image generation in one place",
+      "Massive template library",
+      "Best for non-designers who need professional-looking output",
+      "Strong free tier"
+    ],
+    "cons": [
+      "AI image quality doesn't match standalone generators like Midjourney",
+      "Pro subscription required for most AI features",
+      "Not suitable for photorealistic image generation",
+      "AI writing is basic compared to Claude or ChatGPT"
+    ],
+    "notGoodAt": "Photorealistic image generation or serious creative artwork. For those use cases, Midjourney or Stable Diffusion are far superior.",
+    "lastUpdated": "2026-04-11",
+    "status": "Published"
+  },
+  {
+    "id": "quillbot",
+    "name": "QuillBot",
+    "slug": "quillbot",
+    "category": "ai-writing",
+    "tagline": "The AI paraphrasing and rewriting tool",
+    "website": "https://quillbot.com",
+    "affiliateUrl": "",
+    "pricing": "Free, Premium from $9.95/mo",
+    "hasFree": true,
+    "startingPrice": 10,
+    "rating": 7,
+    "bestFor": "Paraphrasing, rewriting, and summarizing existing content",
+    "pros": [
+      "Best paraphrasing tool available — genuinely good at rewriting",
+      "Chrome extension works everywhere",
+      "Summarizer is fast and accurate",
+      "Affordable Premium at ~$10/mo",
+      "Grammar checker included"
+    ],
+    "cons": [
+      "Not an AI writing assistant — it rewrites, it doesn't create",
+      "Free tier limited to 125 words per paraphrase",
+      "Can produce awkward phrasing on complex sentences",
+      "Grammar checker is weaker than Grammarly"
+    ],
+    "notGoodAt": "Creating original content from scratch. QuillBot rewrites — if you have nothing to start with, you need ChatGPT or Claude first.",
+    "lastUpdated": "2026-04-11",
+    "status": "Published"
   }
 ]
