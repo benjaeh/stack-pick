@@ -108,7 +108,7 @@ export default function HomePage() {
             </div>
             <div className="hidden sm:block w-px h-8 bg-gray-200" />
             <div>
-              <span className="text-2xl font-bold text-primary">March 2026</span>
+              <span className="text-2xl font-bold text-primary">April 2026</span>
               <p className="text-sm text-gray-500">last updated</p>
             </div>
           </div>
