@@ -403,6 +403,23 @@ export default async function VSPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Tool profile links */}
+        <div className="flex flex-wrap gap-3 mb-12">
+          <Link
+            href={`/tools/${tool1.slug}`}
+            className="text-sm text-gray-500 hover:text-primary hover:underline transition-colors"
+          >
+            Full {tool1.name} review →
+          </Link>
+          <span className="text-gray-200">·</span>
+          <Link
+            href={`/tools/${tool2.slug}`}
+            className="text-sm text-gray-500 hover:text-primary hover:underline transition-colors"
+          >
+            Full {tool2.name} review →
+          </Link>
+        </div>
+
         {/* Cross-links */}
         {(otherComparisons.length > 0 || relatedBestOfs.length > 0) && (
           <section className="mb-12">

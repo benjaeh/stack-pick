@@ -18,6 +18,8 @@ export interface Tool {
   pros: string[];
   cons: string[];
   notGoodAt: string;
+  whoShouldNotUse?: string;
+  alternatives?: string[];
   lastUpdated: string;
   status: string;
 }
@@ -97,4 +99,14 @@ export function getRelatedBestOfs(tool1Id: string, tool2Id: string): BestOf[] {
   const tool2 = getToolById(tool2Id);
   const categories = new Set([tool1?.category, tool2?.category].filter(Boolean));
   return bestofs.filter((b) => categories.has(b.category));
+}
+
+export function getComparisonsForTool(toolId: string): Comparison[] {
+  return comparisons.filter(
+    (c) => c.tool1Id === toolId || c.tool2Id === toolId
+  );
+}
+
+export function getBestOfsByToolId(toolId: string): BestOf[] {
+  return bestofs.filter((b) => b.toolIds.includes(toolId));
 }

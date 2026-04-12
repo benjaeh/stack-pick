@@ -25,7 +25,13 @@
     ],
     "notGoodAt": "Highly specialized technical tasks",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Users who primarily work with very long documents — Claude's 1M token context window is dramatically better for full reports, legal texts, and entire codebases. Also not ideal if you never want to deal with usage limits on free tier.",
+    "alternatives": [
+      "claude",
+      "gemini",
+      "perplexity"
+    ]
   },
   {
     "id": "claude",
@@ -53,7 +59,13 @@
     ],
     "notGoodAt": "Highly creative fiction",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Developers who rely on native code execution, image generation (DALL-E), or a large plugin ecosystem. If you code daily and need an AI that can run Python in the chat, ChatGPT's code interpreter is a better fit.",
+    "alternatives": [
+      "chatgpt",
+      "gemini",
+      "perplexity"
+    ]
   },
   {
     "id": "notion",
@@ -81,7 +93,13 @@
     ],
     "notGoodAt": "Heavy-duty project management",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Teams of 50+ who need serious project management — Gantt charts, workload views, resource allocation, and cross-team dependency tracking. Notion's PM capabilities are too lightweight for enterprise project offices.",
+    "alternatives": [
+      "clickup",
+      "monday",
+      "obsidian"
+    ]
   },
   {
     "id": "midjourney",
@@ -109,7 +127,14 @@
     ],
     "notGoodAt": "Photorealistic faces and fine detail",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Anyone creating images for commercial client work, advertising campaigns, or products where legal clearance matters. Midjourney's commercial licensing is legally murky — Adobe Firefly is the only commercially safe AI image tool.",
+    "alternatives": [
+      "dall-e-3",
+      "adobe-firefly",
+      "stable-diffusion",
+      "canva-ai"
+    ]
   },
   {
     "id": "clickup",
@@ -137,7 +162,14 @@
     ],
     "notGoodAt": "Simple personal tasks",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Software engineering teams that live in their issue tracker all day. The feature overload and slower UI will frustrate developers — Linear is significantly faster and better designed for dev workflows. Don't use ClickUp as a Jira alternative for engineering teams.",
+    "alternatives": [
+      "notion",
+      "monday",
+      "linear",
+      "asana"
+    ]
   },
   {
     "id": "jasper",
@@ -165,7 +197,13 @@
     ],
     "notGoodAt": "Highly technical writing",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Solo creators, freelancers, or teams producing content for themselves or one client. The $49/mo minimum and team-oriented features don't justify the cost at small scale — ChatGPT Plus at $20/mo does 80% of what Jasper does.",
+    "alternatives": [
+      "chatgpt",
+      "writesonic",
+      "copy-ai"
+    ]
   },
   {
     "id": "copy-ai",
@@ -249,7 +287,13 @@
     ],
     "notGoodAt": "Generating original content from scratch",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Users who already pay for Claude Pro or ChatGPT Plus. The value overlap between Grammarly Premium ($30/mo) and a capable AI assistant is too high to justify both. Keep Grammarly Free as a passive backup — don't pay for Premium.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "quillbot"
+    ]
   },
   {
     "id": "dall-e-3",
@@ -728,7 +772,13 @@
     ],
     "notGoodAt": "Users who need privacy from big tech, or complex long-form document analysis",
     "lastUpdated": "2026-03-30",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Users who don't use Google Workspace, or anyone with data privacy concerns about Google. Without Gmail, Docs, and Drive integration, Gemini loses its main advantage over ChatGPT and Claude.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   {
     "id": "perplexity",
@@ -758,7 +808,13 @@
     ],
     "notGoodAt": "Content creation, writing drafts, or anything beyond answering questions. Perplexity is a research tool, not an AI writing assistant.",
     "lastUpdated": "2026-04-11",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Anyone looking for an AI writing assistant. Perplexity answers questions with cited sources — it doesn't write content, draft emails, or create. If you need to produce text rather than find information, use Claude or ChatGPT instead.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "gemini"
+    ]
   },
   {
     "id": "canva-ai",
@@ -788,7 +844,13 @@
     ],
     "notGoodAt": "Photorealistic image generation or serious creative artwork. For those use cases, Midjourney or Stable Diffusion are far superior.",
     "lastUpdated": "2026-04-11",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Artists or designers who need high-quality AI image generation for creative or portfolio work. Canva AI's image quality doesn't match Midjourney or DALL-E 3 for standalone AI art. Canva is for templates and quick design — not serious AI image generation.",
+    "alternatives": [
+      "midjourney",
+      "dall-e-3",
+      "adobe-firefly"
+    ]
   },
   {
     "id": "quillbot",
