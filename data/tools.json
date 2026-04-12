@@ -12,8 +12,17 @@
     "startingPrice": 20,
     "rating": 9,
     "bestFor": "General AI chat, research, writing, coding",
-    "pros": ["Versatile", "Strong reasoning", "Plugins & code interpreter", "Massive ecosystem"],
-    "cons": ["Occasional hallucinations", "Can be verbose", "Usage limits on free tier"],
+    "pros": [
+      "Versatile",
+      "Strong reasoning",
+      "Plugins & code interpreter",
+      "Massive ecosystem"
+    ],
+    "cons": [
+      "Occasional hallucinations",
+      "Can be verbose",
+      "Usage limits on free tier"
+    ],
     "notGoodAt": "Highly specialized technical tasks",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -31,8 +40,17 @@
     "startingPrice": 20,
     "rating": 8,
     "bestFor": "Research, summarization, business writing",
-    "pros": ["Long context window", "Clear explanations", "Safe and honest outputs", "Excellent at following instructions"],
-    "cons": ["Less creative than GPT-4", "Slower to add new features", "Smaller ecosystem"],
+    "pros": [
+      "Long context window",
+      "Clear explanations",
+      "Safe and honest outputs",
+      "Excellent at following instructions"
+    ],
+    "cons": [
+      "Less creative than GPT-4",
+      "Slower to add new features",
+      "Smaller ecosystem"
+    ],
     "notGoodAt": "Highly creative fiction",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -50,8 +68,17 @@
     "startingPrice": 8,
     "rating": 9,
     "bestFor": "Productivity, notes, teams, docs",
-    "pros": ["All-in-one workspace", "Flexible databases", "AI features built-in", "Great templates"],
-    "cons": ["Can be overwhelming", "Learning curve", "Slow on large databases"],
+    "pros": [
+      "All-in-one workspace",
+      "Flexible databases",
+      "AI features built-in",
+      "Great templates"
+    ],
+    "cons": [
+      "Can be overwhelming",
+      "Learning curve",
+      "Slow on large databases"
+    ],
     "notGoodAt": "Heavy-duty project management",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -69,8 +96,17 @@
     "startingPrice": 10,
     "rating": 9,
     "bestFor": "Artists, designers, creative projects",
-    "pros": ["High-quality images", "Unique artistic style", "Active community", "Consistent results"],
-    "cons": ["No API access", "Discord-only interface", "Limited fine-grained control"],
+    "pros": [
+      "High-quality images",
+      "Unique artistic style",
+      "Active community",
+      "Consistent results"
+    ],
+    "cons": [
+      "No API access",
+      "Discord-only interface",
+      "Limited fine-grained control"
+    ],
     "notGoodAt": "Photorealistic faces and fine detail",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -88,8 +124,17 @@
     "startingPrice": 7,
     "rating": 8,
     "bestFor": "Project management, teams, docs",
-    "pros": ["Highly customizable", "Powerful automations", "Docs integration", "Feature-packed free tier"],
-    "cons": ["Steep learning curve", "Can get cluttered", "Occasional performance issues"],
+    "pros": [
+      "Highly customizable",
+      "Powerful automations",
+      "Docs integration",
+      "Feature-packed free tier"
+    ],
+    "cons": [
+      "Steep learning curve",
+      "Can get cluttered",
+      "Occasional performance issues"
+    ],
     "notGoodAt": "Simple personal tasks",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -107,8 +152,17 @@
     "startingPrice": 39,
     "rating": 8,
     "bestFor": "Marketing copy, blogs, teams",
-    "pros": ["Fast content generation", "100+ templates", "Integrates with Surfer SEO", "Team collaboration"],
-    "cons": ["Occasional generic output", "Expensive for solo users", "Overkill for basic use"],
+    "pros": [
+      "Fast content generation",
+      "100+ templates",
+      "Integrates with Surfer SEO",
+      "Team collaboration"
+    ],
+    "cons": [
+      "Occasional generic output",
+      "Expensive for solo users",
+      "Overkill for basic use"
+    ],
     "notGoodAt": "Highly technical writing",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -126,8 +180,17 @@
     "startingPrice": 36,
     "rating": 7,
     "bestFor": "Marketing, social media, startups",
-    "pros": ["Easy to use", "Good for brainstorming", "Generous free tier", "Social media tools"],
-    "cons": ["Repetitive outputs", "Less control over tone", "Limited long-form quality"],
+    "pros": [
+      "Easy to use",
+      "Good for brainstorming",
+      "Generous free tier",
+      "Social media tools"
+    ],
+    "cons": [
+      "Repetitive outputs",
+      "Less control over tone",
+      "Limited long-form quality"
+    ],
     "notGoodAt": "Long-form technical writing",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -145,8 +208,17 @@
     "startingPrice": 19,
     "rating": 8,
     "bestFor": "Bloggers, marketers, agencies",
-    "pros": ["Affordable pricing", "Supports 25+ languages", "Built-in SEO tools", "Bulk content generation"],
-    "cons": ["Quality can vary", "Credits system confusing", "Less personality than competitors"],
+    "pros": [
+      "Affordable pricing",
+      "Supports 25+ languages",
+      "Built-in SEO tools",
+      "Bulk content generation"
+    ],
+    "cons": [
+      "Quality can vary",
+      "Credits system confusing",
+      "Less personality than competitors"
+    ],
     "notGoodAt": "Highly creative writing",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -164,8 +236,17 @@
     "startingPrice": 12,
     "rating": 9,
     "bestFor": "Editing, grammar, students, professionals",
-    "pros": ["Excellent grammar correction", "Style suggestions", "Browser extension", "Works everywhere"],
-    "cons": ["Limited creative writing help", "Not a content generator", "Premium features expensive"],
+    "pros": [
+      "Excellent grammar correction",
+      "Style suggestions",
+      "Browser extension",
+      "Works everywhere"
+    ],
+    "cons": [
+      "Limited creative writing help",
+      "Not a content generator",
+      "Premium features expensive"
+    ],
     "notGoodAt": "Generating original content from scratch",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -183,8 +264,17 @@
     "startingPrice": 20,
     "rating": 9,
     "bestFor": "Artists, designers, casual creators",
-    "pros": ["High image quality", "Easy natural language prompts", "Integrated with ChatGPT", "Strong safety filters"],
-    "cons": ["Limited editing capabilities", "Sometimes surreal results", "No standalone free tier"],
+    "pros": [
+      "High image quality",
+      "Easy natural language prompts",
+      "Integrated with ChatGPT",
+      "Strong safety filters"
+    ],
+    "cons": [
+      "Limited editing capabilities",
+      "Sometimes surreal results",
+      "No standalone free tier"
+    ],
     "notGoodAt": "Photorealistic faces and fine detail",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -202,8 +292,17 @@
     "startingPrice": 55,
     "rating": 8,
     "bestFor": "Designers, creative professionals",
-    "pros": ["Fully integrated with Adobe suite", "Commercial use allowed", "Safe for professional work", "Generative fill in Photoshop"],
-    "cons": ["Requires Adobe subscription", "Less impressive than Midjourney stylistically", "Limited standalone use"],
+    "pros": [
+      "Fully integrated with Adobe suite",
+      "Commercial use allowed",
+      "Safe for professional work",
+      "Generative fill in Photoshop"
+    ],
+    "cons": [
+      "Requires Adobe subscription",
+      "Less impressive than Midjourney stylistically",
+      "Limited standalone use"
+    ],
     "notGoodAt": "Highly technical 3D images",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -221,8 +320,17 @@
     "startingPrice": 0,
     "rating": 8,
     "bestFor": "Developers, researchers, hobbyists",
-    "pros": ["Fully open source", "Highly customizable with LoRAs and fine-tuning", "Large community", "Run locally for free"],
-    "cons": ["Requires technical setup", "Hardware intensive", "Steep learning curve for best results"],
+    "pros": [
+      "Fully open source",
+      "Highly customizable with LoRAs and fine-tuning",
+      "Large community",
+      "Run locally for free"
+    ],
+    "cons": [
+      "Requires technical setup",
+      "Hardware intensive",
+      "Steep learning curve for best results"
+    ],
     "notGoodAt": "Non-technical users wanting quick results",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -240,8 +348,17 @@
     "startingPrice": 0,
     "rating": 9,
     "bestFor": "Note-taking, knowledge management, PKM",
-    "pros": ["Markdown-based", "Massive plugin ecosystem", "Local storage for privacy", "Graph view for connections"],
-    "cons": ["Steeper learning curve", "No native web version", "Sync requires paid add-on"],
+    "pros": [
+      "Markdown-based",
+      "Massive plugin ecosystem",
+      "Local storage for privacy",
+      "Graph view for connections"
+    ],
+    "cons": [
+      "Steeper learning curve",
+      "No native web version",
+      "Sync requires paid add-on"
+    ],
     "notGoodAt": "Real-time collaboration",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -259,8 +376,17 @@
     "startingPrice": 8,
     "rating": 7,
     "bestFor": "Personal productivity, notes, reminders",
-    "pros": ["AI-powered search", "Simple interface", "Good integrations", "Auto-organization"],
-    "cons": ["Limited export options", "Less robust than Notion or Obsidian", "Smaller community"],
+    "pros": [
+      "AI-powered search",
+      "Simple interface",
+      "Good integrations",
+      "Auto-organization"
+    ],
+    "cons": [
+      "Limited export options",
+      "Less robust than Notion or Obsidian",
+      "Smaller community"
+    ],
     "notGoodAt": "Complex project management",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -278,8 +404,17 @@
     "startingPrice": 0,
     "rating": 8,
     "bestFor": "Knowledge management, outlining, researchers",
-    "pros": ["Graph view", "Privacy-first with local storage", "Open source", "Daily notes workflow"],
-    "cons": ["Mobile app less mature", "Learning curve", "Slower development pace"],
+    "pros": [
+      "Graph view",
+      "Privacy-first with local storage",
+      "Open source",
+      "Daily notes workflow"
+    ],
+    "cons": [
+      "Mobile app less mature",
+      "Learning curve",
+      "Slower development pace"
+    ],
     "notGoodAt": "Team collaboration",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -297,8 +432,18 @@
     "startingPrice": 15,
     "rating": 7,
     "bestFor": "Networked note-taking, researchers",
-    "pros": ["Bidirectional links", "Daily notes system", "Graph view", "Powerful for PKM"],
-    "cons": ["Expensive with no free tier", "Limited export", "No offline mode", "Niche audience"],
+    "pros": [
+      "Bidirectional links",
+      "Daily notes system",
+      "Graph view",
+      "Powerful for PKM"
+    ],
+    "cons": [
+      "Expensive with no free tier",
+      "Limited export",
+      "No offline mode",
+      "Niche audience"
+    ],
     "notGoodAt": "Casual note-taking",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -316,8 +461,17 @@
     "startingPrice": 10.99,
     "rating": 9,
     "bestFor": "Teams, project tracking, businesses",
-    "pros": ["Flexible project views", "100+ integrations", "Timeline and Gantt view", "Strong notification system"],
-    "cons": ["Can be overwhelming for small teams", "Too many notifications by default", "Less suited for personal use"],
+    "pros": [
+      "Flexible project views",
+      "100+ integrations",
+      "Timeline and Gantt view",
+      "Strong notification system"
+    ],
+    "cons": [
+      "Can be overwhelming for small teams",
+      "Too many notifications by default",
+      "Less suited for personal use"
+    ],
     "notGoodAt": "Personal task management",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -335,8 +489,17 @@
     "startingPrice": 8,
     "rating": 8,
     "bestFor": "Project management, teams, SMBs",
-    "pros": ["Highly customizable workflows", "Visual dashboards", "Automations", "Great for non-technical teams"],
-    "cons": ["Learning curve", "Can get expensive for large teams", "Overkill for simple tasks"],
+    "pros": [
+      "Highly customizable workflows",
+      "Visual dashboards",
+      "Automations",
+      "Great for non-technical teams"
+    ],
+    "cons": [
+      "Learning curve",
+      "Can get expensive for large teams",
+      "Overkill for simple tasks"
+    ],
     "notGoodAt": "Simple personal to-do lists",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -354,8 +517,17 @@
     "startingPrice": 8,
     "rating": 8,
     "bestFor": "Product teams, software development",
-    "pros": ["Blazing fast UI", "GitHub integration", "Keyboard shortcuts", "Clean design"],
-    "cons": ["Limited outside software development", "Less suited for non-devs", "Fewer templates than competitors"],
+    "pros": [
+      "Blazing fast UI",
+      "GitHub integration",
+      "Keyboard shortcuts",
+      "Clean design"
+    ],
+    "cons": [
+      "Limited outside software development",
+      "Less suited for non-devs",
+      "Fewer templates than competitors"
+    ],
     "notGoodAt": "Non-technical project management",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -373,8 +545,17 @@
     "startingPrice": 12,
     "rating": 8,
     "bestFor": "Podcasters, video editors, marketers",
-    "pros": ["Text-based video editing", "Overdub voice cloning", "Screen recording", "Auto-transcription"],
-    "cons": ["Rendering can be slow", "Learning curve for advanced features", "Limited color grading"],
+    "pros": [
+      "Text-based video editing",
+      "Overdub voice cloning",
+      "Screen recording",
+      "Auto-transcription"
+    ],
+    "cons": [
+      "Rendering can be slow",
+      "Learning curve for advanced features",
+      "Limited color grading"
+    ],
     "notGoodAt": "Advanced color grading and VFX",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -392,8 +573,17 @@
     "startingPrice": 12,
     "rating": 8,
     "bestFor": "Video creators, AI effects, marketers",
-    "pros": ["AI video generation tools", "Green screen removal", "Easy visual effects", "Browser-based"],
-    "cons": ["Limited export options on free plan", "All browser-based — no desktop app", "Credits run out fast"],
+    "pros": [
+      "AI video generation tools",
+      "Green screen removal",
+      "Easy visual effects",
+      "Browser-based"
+    ],
+    "cons": [
+      "Limited export options on free plan",
+      "All browser-based — no desktop app",
+      "Credits run out fast"
+    ],
     "notGoodAt": "Professional film editing",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -408,11 +598,20 @@
     "affiliateUrl": "",
     "pricing": "From $22.50/mo",
     "hasFree": false,
-    "startingPrice": 22.50,
+    "startingPrice": 22.5,
     "rating": 8,
     "bestFor": "Corporate training, explainer videos",
-    "pros": ["Realistic AI avatars", "Multilingual support (120+ languages)", "Easy to use", "No filming required"],
-    "cons": ["Limited avatar customization", "Voices can sound robotic", "Expensive for small budgets"],
+    "pros": [
+      "Realistic AI avatars",
+      "Multilingual support (120+ languages)",
+      "Easy to use",
+      "No filming required"
+    ],
+    "cons": [
+      "Limited avatar customization",
+      "Voices can sound robotic",
+      "Expensive for small budgets"
+    ],
     "notGoodAt": "Creative filmmaking",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -430,8 +629,17 @@
     "startingPrice": 24,
     "rating": 7,
     "bestFor": "Marketing, video messaging, sales",
-    "pros": ["Very realistic avatars", "Fast rendering", "Good templates", "Video translation feature"],
-    "cons": ["Limited editing tools", "Subscription required from the start", "Pricey for occasional use"],
+    "pros": [
+      "Very realistic avatars",
+      "Fast rendering",
+      "Good templates",
+      "Video translation feature"
+    ],
+    "cons": [
+      "Limited editing tools",
+      "Subscription required from the start",
+      "Pricey for occasional use"
+    ],
     "notGoodAt": "Complex video production",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -449,8 +657,17 @@
     "startingPrice": 10,
     "rating": 8,
     "bestFor": "Notion users, productivity, writing help",
-    "pros": ["Seamlessly integrated with Notion", "Summarizes notes instantly", "Versatile writing tools", "No context switching"],
-    "cons": ["Requires Notion subscription", "Sometimes generic outputs", "Not a standalone tool"],
+    "pros": [
+      "Seamlessly integrated with Notion",
+      "Summarizes notes instantly",
+      "Versatile writing tools",
+      "No context switching"
+    ],
+    "cons": [
+      "Requires Notion subscription",
+      "Sometimes generic outputs",
+      "Not a standalone tool"
+    ],
     "notGoodAt": "Standalone writing without Notion",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -468,8 +685,17 @@
     "startingPrice": 25,
     "rating": 9,
     "bestFor": "Teams, business, advanced AI access",
-    "pros": ["Access to GPT-4o and latest models", "Team collaboration features", "Data privacy controls", "Higher usage limits"],
-    "cons": ["Higher cost per user", "Requires onboarding for teams", "Overkill for individuals"],
+    "pros": [
+      "Access to GPT-4o and latest models",
+      "Team collaboration features",
+      "Data privacy controls",
+      "Higher usage limits"
+    ],
+    "cons": [
+      "Higher cost per user",
+      "Requires onboarding for teams",
+      "Overkill for individuals"
+    ],
     "notGoodAt": "Highly specialized industry content",
     "lastUpdated": "2026-03-29",
     "status": "Published"
@@ -592,6 +818,126 @@
     ],
     "notGoodAt": "Creating original content from scratch. QuillBot rewrites — if you have nothing to start with, you need ChatGPT or Claude first.",
     "lastUpdated": "2026-04-11",
+    "status": "Published"
+  },
+  {
+    "id": "riverside",
+    "name": "Riverside.fm",
+    "slug": "riverside",
+    "category": "ai-video",
+    "tagline": "Studio-quality podcast and video recording in your browser",
+    "website": "https://riverside.fm",
+    "affiliateUrl": "",
+    "pricing": "Free, Standard from $15/mo",
+    "hasFree": true,
+    "startingPrice": 15,
+    "rating": 8,
+    "bestFor": "Podcast recording, remote interviews, creators who need studio-quality audio without a studio",
+    "pros": [
+      "Records locally — studio-quality audio even with bad internet",
+      "Separate tracks per speaker, essential for clean editing",
+      "AI transcription included on all paid plans",
+      "Progressive uploads so you never lose a recording",
+      "Video and audio in the same session"
+    ],
+    "cons": [
+      "It's a recorder, not an editor — limited post-production tools",
+      "Free tier restricts recording hours",
+      "More expensive than Zoom for basic calls",
+      "No AI avatar or synthetic content features"
+    ],
+    "notGoodAt": "Post-production editing. Riverside records exceptionally well but anything beyond basic cuts requires exporting to Descript or a proper video editor. Don't buy Riverside expecting an all-in-one suite.",
+    "lastUpdated": "2026-04-12",
+    "status": "Published"
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "slug": "gamma",
+    "category": "productivity",
+    "tagline": "AI-powered presentations without the slide-by-slide grind",
+    "website": "https://gamma.app",
+    "affiliateUrl": "",
+    "pricing": "Free, Plus from $10/mo",
+    "hasFree": true,
+    "startingPrice": 10,
+    "rating": 8,
+    "bestFor": "Creating presentations, pitch decks, and documents from a prompt in minutes",
+    "pros": [
+      "Generates an entire presentation from a single text prompt",
+      "Modern templates that don't look like PowerPoint from 2012",
+      "Easy to edit sections without starting over",
+      "Embeds cleanly in Notion and docs",
+      "Generous free tier with enough to evaluate properly"
+    ],
+    "cons": [
+      "Less fine-grained control than PowerPoint or Google Slides",
+      "Limited custom branding on free plan",
+      "Not great for complex data visualizations",
+      "No advanced animation or transitions"
+    ],
+    "notGoodAt": "Pixel-perfect, brand-consistent presentations for enterprise pitches where design precision matters. For those, you still need PowerPoint or Keynote. Gamma's strength is speed for good-enough — not perfection.",
+    "lastUpdated": "2026-04-12",
+    "status": "Published"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "slug": "elevenlabs",
+    "category": "ai-video",
+    "tagline": "The most realistic AI voice generation and voice cloning platform",
+    "website": "https://elevenlabs.io",
+    "affiliateUrl": "",
+    "pricing": "Free, Starter from $5/mo",
+    "hasFree": true,
+    "startingPrice": 5,
+    "rating": 9,
+    "bestFor": "AI voiceovers, podcast narration, video narration, and voice cloning for creators",
+    "pros": [
+      "Most realistic AI voices available — genuinely hard to tell from humans",
+      "Voice cloning from just a few minutes of audio",
+      "29+ languages with natural-sounding accents",
+      "Very affordable entry price at $5/mo",
+      "Huge pre-built voice library"
+    ],
+    "cons": [
+      "Free tier has very strict monthly character limits",
+      "Voice cloning raises serious ethical and consent issues",
+      "Real-time voice conversion is still improving",
+      "Not a full audio production suite — just voice generation"
+    ],
+    "notGoodAt": "Full audio production, podcast editing, or anything beyond voice generation. ElevenLabs creates voices — you still need Descript or a DAW for everything else in your audio workflow.",
+    "lastUpdated": "2026-04-12",
+    "status": "Published"
+  },
+  {
+    "id": "loom",
+    "name": "Loom",
+    "slug": "loom",
+    "category": "ai-video",
+    "tagline": "Record and share quick video messages for async team communication",
+    "website": "https://www.loom.com",
+    "affiliateUrl": "",
+    "pricing": "Free, Business from $12.50/mo",
+    "hasFree": true,
+    "startingPrice": 12.5,
+    "rating": 8,
+    "bestFor": "Async team communication, quick video walkthroughs, and remote team updates",
+    "pros": [
+      "Screen + webcam recording with one click",
+      "AI summaries and transcripts auto-generated",
+      "Viewer reactions and timestamped comments",
+      "Instant shareable link — no uploading needed",
+      "Widely adopted by remote teams"
+    ],
+    "cons": [
+      "Free tier limited to 25 videos",
+      "Basic editing only — not a video editor",
+      "Getting more expensive since Atlassian acquisition",
+      "No live streaming"
+    ],
+    "notGoodAt": "Polished, edited video content. Loom is for quick-and-async, not professional production. For anything you'd actually publish publicly, you need Descript or a proper editor.",
+    "lastUpdated": "2026-04-12",
     "status": "Published"
   }
 ]
