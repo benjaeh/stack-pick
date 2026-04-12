@@ -108,5 +108,9 @@ export function getComparisonsForTool(toolId: string): Comparison[] {
 }
 
 export function getBestOfsByToolId(toolId: string): BestOf[] {
-  return bestofs.filter((b) => b.toolIds.includes(toolId));
+  const tool = getToolById(toolId);
+  const alternativesSlug = tool ? `${tool.slug}-alternatives` : null;
+  return bestofs.filter(
+    (b) => b.toolIds.includes(toolId) || b.slug === alternativesSlug
+  );
 }
