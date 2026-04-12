@@ -131,6 +131,18 @@ export default async function BestOfPage({ params }: Props) {
                     </div>
                   </div>
 
+                  {/* Best For + Not Good At — radical honesty at card level */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
+                    <div className="bg-green-50 border border-green-100 rounded-lg px-3 py-2">
+                      <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-0.5">Best For</p>
+                      <p className="text-xs text-gray-700">{tool.bestFor}</p>
+                    </div>
+                    <div className="bg-orange-50 border border-orange-100 rounded-lg px-3 py-2">
+                      <p className="text-xs font-bold text-orange-700 uppercase tracking-wide mb-0.5">Not Good At</p>
+                      <p className="text-xs text-gray-700">{tool.notGoodAt}</p>
+                    </div>
+                  </div>
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
                       <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-2">Pros</p>

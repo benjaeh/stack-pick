@@ -34,7 +34,27 @@ export default async function VSPage({ params }: Props) {
   if (!tool1 || !tool2) notFound();
 
   const winner = comparison.winner === tool1.id ? tool1 : tool2;
-  const otherComparisons = comparisons.filter((c) => c.slug !== slug).slice(0, 2);
+
+  // Prefer comparisons that share a tool with the current page
+  const sameToolComparisons = comparisons.filter(
+    (c) =>
+      c.slug !== slug &&
+      (c.tool1Id === comparison.tool1Id ||
+        c.tool2Id === comparison.tool1Id ||
+        c.tool1Id === comparison.tool2Id ||
+        c.tool2Id === comparison.tool2Id)
+  );
+  const otherComparisons =
+    sameToolComparisons.length >= 2
+      ? sameToolComparisons.slice(0, 3)
+      : [
+          ...sameToolComparisons,
+          ...comparisons
+            .filter(
+              (c) => c.slug !== slug && !sameToolComparisons.includes(c)
+            )
+            .slice(0, 3 - sameToolComparisons.length),
+        ];
   const relatedBestOfs = getRelatedBestOfs(comparison.tool1Id, comparison.tool2Id);
 
   const faqSchema = {
@@ -309,6 +329,22 @@ export default async function VSPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* /compare callout */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border border-primary/20 bg-primary-light/30 rounded-xl px-5 py-4 mb-12">
+          <div>
+            <p className="text-xs font-bold text-primary uppercase tracking-wide mb-1">New</p>
+            <p className="text-sm text-gray-700">
+              Want to see <strong>{tool1.name}</strong> and <strong>{tool2.name}</strong> answer the exact same prompt?
+            </p>
+          </div>
+          <Link
+            href="/compare"
+            className="shrink-0 border border-primary text-primary font-semibold text-sm px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors whitespace-nowrap"
+          >
+            See real outputs →
+          </Link>
+        </div>
 
         {/* Use cases */}
         <section className="mb-12">

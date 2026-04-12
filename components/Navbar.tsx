@@ -96,6 +96,14 @@ export default function Navbar() {
         {/* Mobile menu */}
         {isOpen && (
           <div className="md:hidden border-t border-gray-100 py-4 space-y-1">
+            {/* Mobile search */}
+            <div className="px-3 pb-3">
+              <SearchBar
+                comparisons={comparisonsData as Comparison[]}
+                tools={toolsData as Tool[]}
+                bestofs={bestofData as BestOf[]}
+              />
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
