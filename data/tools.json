@@ -231,7 +231,13 @@
     ],
     "notGoodAt": "Long-form technical writing",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Copy.ai is not the right tool if you need long-form content, nuanced editing, or brand-consistent tone. It is a template engine — not a writing assistant. If you are writing blog posts, detailed proposals, or anything over 500 words, Jasper or Claude will serve you better.",
+    "alternatives": [
+      "jasper",
+      "writesonic",
+      "chatgpt"
+    ]
   },
   {
     "id": "writesonic",
@@ -259,7 +265,13 @@
     ],
     "notGoodAt": "Highly creative writing",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Avoid Writesonic if you need strong editorial quality or deep research integration. It is fast but shallow — great for ad copy and landing pages, weak for thought leadership or anything requiring real nuance. Jasper or Claude produce better long-form results.",
+    "alternatives": [
+      "jasper",
+      "copy-ai",
+      "chatgpt"
+    ]
   },
   {
     "id": "grammarly",
@@ -321,7 +333,13 @@
     ],
     "notGoodAt": "Photorealistic faces and fine detail",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Do not use DALL-E 3 if you need highly stylized, artistic, or photorealistic images with fine compositional control. Midjourney produces significantly better artistic output. DALL-E 3 is most useful when you already use ChatGPT and want image generation without switching tools.",
+    "alternatives": [
+      "midjourney",
+      "adobe-firefly",
+      "stable-diffusion"
+    ]
   },
   {
     "id": "adobe-firefly",
@@ -349,7 +367,13 @@
     ],
     "notGoodAt": "Highly technical 3D images",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Adobe Firefly is not worth the cost if you are not already in the Adobe Creative Cloud ecosystem. The standalone web app is limited, and paying for Creative Cloud just to access Firefly is expensive. Use Canva AI or Midjourney instead.",
+    "alternatives": [
+      "canva-ai",
+      "midjourney",
+      "dall-e-3"
+    ]
   },
   {
     "id": "stable-diffusion",
@@ -377,7 +401,13 @@
     ],
     "notGoodAt": "Non-technical users wanting quick results",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Stable Diffusion is not for non-technical users. Running it locally requires a capable GPU, technical setup, and ongoing maintenance. If you want AI image generation without friction, use Midjourney or Canva AI. Stable Diffusion is for creators who want maximum control and are comfortable with the technical overhead.",
+    "alternatives": [
+      "midjourney",
+      "canva-ai",
+      "dall-e-3"
+    ]
   },
   {
     "id": "obsidian",
@@ -405,7 +435,13 @@
     ],
     "notGoodAt": "Real-time collaboration",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Obsidian is not a good fit for non-technical users who want a simple notes app. The learning curve is steep, plugins require configuration, and there is no built-in sync on the free plan. If you want low-friction note-taking, use Notion or Mem instead.",
+    "alternatives": [
+      "notion",
+      "mem",
+      "logseq"
+    ]
   },
   {
     "id": "mem",
@@ -433,7 +469,13 @@
     ],
     "notGoodAt": "Complex project management",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Mem is not the right tool if you need structured databases, project management, or team wikis. It is an AI-powered personal note-taking tool — not a team workspace. For team use or structured knowledge management, Notion is a better fit.",
+    "alternatives": [
+      "notion",
+      "obsidian",
+      "logseq"
+    ]
   },
   {
     "id": "logseq",
@@ -461,7 +503,13 @@
     ],
     "notGoodAt": "Team collaboration",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Logseq is not for users who want a polished, low-friction experience. It is an open-source outliner built for power users who think in connected blocks. If you are not comfortable with plain text files, bidirectional links, and occasional rough edges, Notion or Mem is a better starting point.",
+    "alternatives": [
+      "obsidian",
+      "notion",
+      "mem"
+    ]
   },
   {
     "id": "roam-research",
@@ -490,7 +538,13 @@
     ],
     "notGoodAt": "Casual note-taking",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Roam Research is expensive (/month), technically dated compared to newer tools, and has a steep learning curve. Unless you are already a Roam power user, Obsidian offers most of the same networked thinking features for free. New users should evaluate Obsidian or Logseq first.",
+    "alternatives": [
+      "obsidian",
+      "logseq",
+      "notion"
+    ]
   },
   {
     "id": "asana",
@@ -518,7 +572,13 @@
     ],
     "notGoodAt": "Personal task management",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Asana is not the right tool for software development teams who need issue tracking with GitHub integration. It is a business project management tool. Engineering teams should look at Linear or ClickUp. Also avoid Asana if budget is tight — it gets expensive at team scale.",
+    "alternatives": [
+      "clickup",
+      "monday",
+      "linear"
+    ]
   },
   {
     "id": "monday",
@@ -546,7 +606,13 @@
     ],
     "notGoodAt": "Simple personal to-do lists",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Monday.com is not worth the cost for small teams with simple workflows or for software development teams who need fast issue tracking. The per-seat pricing is expensive, and engineering teams will find Linear or ClickUp better suited to their workflow.",
+    "alternatives": [
+      "clickup",
+      "asana",
+      "linear"
+    ]
   },
   {
     "id": "linear",
@@ -574,7 +640,13 @@
     ],
     "notGoodAt": "Non-technical project management",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Linear is built for software and product teams. If you manage marketing campaigns, client projects, HR workflows, or anything outside engineering — Linear will feel too rigid. Use Monday.com or ClickUp for cross-functional business work.",
+    "alternatives": [
+      "clickup",
+      "monday",
+      "asana"
+    ]
   },
   {
     "id": "descript",
@@ -602,7 +674,13 @@
     ],
     "notGoodAt": "Advanced color grading and VFX",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Descript is not built for generating voice content from scratch or dubbing into multiple languages at scale. If you need AI voice generation rather than editing real recordings, ElevenLabs is the right tool. Also avoid Descript if you primarily work with short-form social clips — CapCut or Opus Clip are faster for that use case.",
+    "alternatives": [
+      "riverside",
+      "elevenlabs",
+      "loom"
+    ]
   },
   {
     "id": "runway",
@@ -630,7 +708,13 @@
     ],
     "notGoodAt": "Professional film editing",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Runway is not the right tool if you need talking-head video presenters or avatar-based content. Synthesia and HeyGen are purpose-built for that. Runway is for creators who want to generate or transform video footage with AI — not for corporate explainer video production.",
+    "alternatives": [
+      "descript",
+      "synthesia",
+      "heygen"
+    ]
   },
   {
     "id": "synthesia",
@@ -658,7 +742,13 @@
     ],
     "notGoodAt": "Creative filmmaking",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Avoid Synthesia if your content requires emotional authenticity or a personal brand presence. AI avatars still feel visibly synthetic and can undermine trust in certain contexts. Also not the right tool for creators — it is built for corporate and training video use cases. Loom or Riverside will serve creators better.",
+    "alternatives": [
+      "heygen",
+      "loom",
+      "descript"
+    ]
   },
   {
     "id": "heygen",
@@ -686,7 +776,13 @@
     ],
     "notGoodAt": "Complex video production",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "HeyGen is not the right tool for raw content creation, podcast production, or anything that benefits from a real human presence. If your audience expects authenticity — creators, coaches, consultants — AI avatars will feel impersonal. Use Loom or Riverside for personal-brand content.",
+    "alternatives": [
+      "synthesia",
+      "loom",
+      "descript"
+    ]
   },
   {
     "id": "notion-ai",
@@ -714,7 +810,13 @@
     ],
     "notGoodAt": "Standalone writing without Notion",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Notion AI is not worth paying for if you spend most of your time outside Notion. It is an in-workspace tool — it has no value beyond Notion pages. If you want general AI writing assistance, Claude or ChatGPT are more capable and not locked to one platform.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "jasper"
+    ]
   },
   {
     "id": "chatgpt-team",
@@ -742,7 +844,13 @@
     ],
     "notGoodAt": "Highly specialized industry content",
     "lastUpdated": "2026-03-29",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "ChatGPT Team is not the right tier if your team primarily needs document analysis over long contexts — Claude handles 1M tokens vs ChatGPT Team's smaller limit. Also avoid if your team does not need collaborative workspaces or usage controls — the individual Plus plan is cheaper and nearly as capable.",
+    "alternatives": [
+      "chatgpt",
+      "claude",
+      "notion-ai"
+    ]
   },
   {
     "id": "gemini",
@@ -880,7 +988,13 @@
     ],
     "notGoodAt": "Creating original content from scratch. QuillBot rewrites — if you have nothing to start with, you need ChatGPT or Claude first.",
     "lastUpdated": "2026-04-11",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "QuillBot is not a writing tool — it is a rewriting tool. If you need to create content from scratch, generate ideas, or write long-form pieces, QuillBot is the wrong starting point. Use ChatGPT, Claude, or Jasper for content creation. QuillBot is best for polishing and paraphrasing content you already have.",
+    "alternatives": [
+      "grammarly",
+      "chatgpt",
+      "claude"
+    ]
   },
   {
     "id": "riverside",
@@ -910,7 +1024,13 @@
     ],
     "notGoodAt": "Post-production editing. Riverside records exceptionally well but anything beyond basic cuts requires exporting to Descript or a proper video editor. Don't buy Riverside expecting an all-in-one suite.",
     "lastUpdated": "2026-04-12",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Riverside is not for async team communication or internal screen sharing. If you need to send quick video updates to teammates, Loom is the right tool. Riverside is purpose-built for published podcast and video interview content — it is overbuilt for casual internal recording.",
+    "alternatives": [
+      "loom",
+      "descript",
+      "heygen"
+    ]
   },
   {
     "id": "gamma",
@@ -940,7 +1060,13 @@
     ],
     "notGoodAt": "Pixel-perfect, brand-consistent presentations for enterprise pitches where design precision matters. For those, you still need PowerPoint or Keynote. Gamma's strength is speed for good-enough — not perfection.",
     "lastUpdated": "2026-04-12",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Gamma is not a knowledge management or project management tool. If you need a team workspace — databases, wikis, task tracking — Gamma will not serve that need. It is a presentation and document tool. Also avoid if you need pixel-perfect design control — Gamma's AI layout system has limited customization.",
+    "alternatives": [
+      "notion",
+      "canva-ai",
+      "chatgpt"
+    ]
   },
   {
     "id": "elevenlabs",
@@ -970,7 +1096,13 @@
     ],
     "notGoodAt": "Full audio production, podcast editing, or anything beyond voice generation. ElevenLabs creates voices — you still need Descript or a DAW for everything else in your audio workflow.",
     "lastUpdated": "2026-04-12",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "ElevenLabs is not an audio or video editor. If you need to edit existing recordings, remove filler words, or clean up a podcast episode — ElevenLabs cannot do that. Use Descript instead. Also avoid if your content requires natural, spontaneous-sounding speech — AI voices still feel synthetic in conversational contexts.",
+    "alternatives": [
+      "descript",
+      "riverside",
+      "loom"
+    ]
   },
   {
     "id": "loom",
@@ -1000,6 +1132,12 @@
     ],
     "notGoodAt": "Polished, edited video content. Loom is for quick-and-async, not professional production. For anything you'd actually publish publicly, you need Descript or a proper editor.",
     "lastUpdated": "2026-04-12",
-    "status": "Published"
+    "status": "Published",
+    "whoShouldNotUse": "Loom is not built for podcast production, content creation, or anything you plan to publish publicly. The audio quality and editing capabilities are functional but not professional-grade. For published video or podcast content, use Riverside or Descript instead.",
+    "alternatives": [
+      "riverside",
+      "descript",
+      "heygen"
+    ]
   }
 ]
