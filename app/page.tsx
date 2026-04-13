@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import NewsletterForm from "@/components/NewsletterForm";
 import { generateHomepageMetadata, getWebsiteSchema, getOrganizationSchema } from "@/lib/seo";
-import { tools, comparisons, getToolById, getComparisonBySlug } from "@/lib/tools";
+import { tools, comparisons, bestofs, getToolById, getComparisonBySlug } from "@/lib/tools";
 
 export const metadata: Metadata = generateHomepageMetadata();
 
@@ -103,12 +103,17 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-center">
             <div>
               <span className="text-2xl font-bold text-primary">{tools.length}</span>
-              <p className="text-sm text-gray-500">tools compared</p>
+              <p className="text-sm text-gray-500">tools reviewed</p>
             </div>
             <div className="hidden sm:block w-px h-8 bg-gray-200" />
             <div>
               <span className="text-2xl font-bold text-primary">{comparisons.length}</span>
-              <p className="text-sm text-gray-500">honest comparisons</p>
+              <p className="text-sm text-gray-500">head-to-head comparisons</p>
+            </div>
+            <div className="hidden sm:block w-px h-8 bg-gray-200" />
+            <div>
+              <span className="text-2xl font-bold text-primary">{bestofs.length}</span>
+              <p className="text-sm text-gray-500">ranked lists</p>
             </div>
             <div className="hidden sm:block w-px h-8 bg-gray-200" />
             <div>
