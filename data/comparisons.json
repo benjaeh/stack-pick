@@ -89,7 +89,8 @@
         "question": "Which is better for long documents?",
         "answer": "Claude, by a massive margin. Claude Sonnet 4.6's context window is up to 1M tokens — far larger than ChatGPT's. This makes Claude dramatically better for analyzing full research papers, legal documents, entire books, or large codebases."
       }
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "notion-vs-obsidian",
@@ -181,7 +182,8 @@
         "question": "Which is better for writing a book or long-form content?",
         "answer": "Obsidian, by far. Its linking system, backreferences, and local Markdown files make it ideal for long-form writing projects. Many authors and researchers prefer it specifically for this reason."
       }
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "jasper-vs-copy-ai",
@@ -269,7 +271,8 @@
         "question": "Can Jasper or Copy.ai replace a human writer?",
         "answer": "No — and they shouldn't try to. Both tools are best used to accelerate a human writer's workflow, not replace it. The output needs editing and fact-checking."
       }
-    ]
+    ],
+    "vsCategory": "writing"
   },
   {
     "slug": "claude-vs-gemini",
@@ -365,7 +368,8 @@
         "question": "Is Claude safer than Gemini for sensitive data?",
         "answer": "Anthropic has strong privacy commitments — Claude Pro conversations are not used to train models by default. Google's data practices are more complex and tied to its broader ecosystem. For sensitive professional data, Claude is generally the safer choice."
       }
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "clickup-vs-asana",
@@ -461,7 +465,8 @@
         "question": "Which is better for remote teams?",
         "answer": "Both work well for remote teams. Asana's cleaner interface tends to reduce onboarding friction, which helps when you can't do in-person training. ClickUp's built-in Docs and Whiteboards can reduce the need for separate tools."
       }
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "chatgpt-plus-vs-free",
@@ -559,7 +564,8 @@
         "question": "Is Claude Pro a better deal than ChatGPT Plus?",
         "answer": "Both cost $20/month. Claude Pro gives you more context window (200K tokens) and better instruction-following. ChatGPT Plus gives you DALL-E, code interpreter, and a larger ecosystem. The better deal depends on your use case."
       }
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "claude-opus-vs-gpt5",
@@ -655,7 +661,8 @@
         "question": "Can Claude Opus 4.6 generate images?",
         "answer": "No. Claude Opus 4.6 handles text and vision (analyzing images you provide) but cannot generate images. For image creation, ChatGPT with DALL-E, Midjourney, or Adobe Firefly are better choices."
       }
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "midjourney-vs-dall-e",
@@ -753,7 +760,8 @@
         "question": "Which AI image generator is best for beginners?",
         "answer": "DALL-E 3 via ChatGPT is the easiest starting point — no new account, familiar interface, and natural prompts work well. Once you want higher quality results, move to Midjourney."
       }
-    ]
+    ],
+    "vsCategory": "image-ai"
   },
   {
     "slug": "chatgpt-vs-gemini",
@@ -849,7 +857,8 @@
         "question": "Can ChatGPT browse the internet?",
         "answer": "ChatGPT Plus can browse the web, but it's less seamless than Gemini's built-in Google Search integration. For up-to-date research that needs reliable real-time results, Gemini or Perplexity are more consistent."
       }
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "perplexity-vs-chatgpt",
@@ -945,7 +954,8 @@
         "question": "Should I use Perplexity or ChatGPT for research?",
         "answer": "Perplexity for research that needs to be verifiable with sources. ChatGPT for synthesizing, writing up, and analyzing research you've already gathered."
       }
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "grammarly-vs-quillbot",
@@ -1041,7 +1051,8 @@
         "question": "Which is better for students, Grammarly or QuillBot?",
         "answer": "Both have legitimate use cases for students. Grammarly catches errors in your writing. QuillBot helps rephrase and cite sources. Many students use both — Grammarly for proofreading, QuillBot for summarizing research and paraphrasing sources."
       }
-    ]
+    ],
+    "vsCategory": "writing"
   },
   {
     "slug": "notion-vs-clickup",
@@ -1137,7 +1148,8 @@
         "question": "Can you use Notion and ClickUp together?",
         "answer": "Yes — many teams do. Notion for the company wiki and documentation. ClickUp for project and task management. They serve different purposes well enough that the overlap is minimal."
       }
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "monday-vs-clickup",
@@ -1233,7 +1245,8 @@
         "question": "Which is better for a marketing team?",
         "answer": "Monday.com. Marketing teams typically need visual campaign tracking, client approvals, and polished reporting — all areas where Monday's interface excels. ClickUp's complexity tends to slow marketing teams down."
       }
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "jasper-vs-writesonic",
@@ -1329,7 +1342,8 @@
         "question": "Can Writesonic replace Jasper?",
         "answer": "For solo users — yes, for most tasks. For marketing teams with brand voice requirements, approval workflows, and 50+ content pieces per month — Jasper's team features are harder to replicate in Writesonic."
       }
-    ]
+    ],
+    "vsCategory": "writing"
   },
   {
     "slug": "monday-vs-asana",
@@ -1422,7 +1436,8 @@
       "notion-vs-clickup",
       "monday-vs-clickup",
       "clickup-vs-asana"
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "grammarly-vs-chatgpt",
@@ -1516,7 +1531,8 @@
       "chatgpt-vs-claude",
       "grammarly-vs-quillbot",
       "grammarly-vs-claude"
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "midjourney-vs-adobe-firefly",
@@ -1609,7 +1625,8 @@
     "relatedComparisons": [
       "midjourney-vs-dall-e",
       "chatgpt-vs-claude"
-    ]
+    ],
+    "vsCategory": "image-ai"
   },
   {
     "slug": "notion-vs-monday",
@@ -1702,7 +1719,8 @@
       "notion-vs-clickup",
       "monday-vs-clickup",
       "monday-vs-asana"
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "heygen-vs-synthesia",
@@ -1794,7 +1812,8 @@
     "relatedComparisons": [
       "runway-vs-descript",
       "descript-vs-riverside"
-    ]
+    ],
+    "vsCategory": "video-audio"
   },
   {
     "slug": "chatgpt-vs-claude-for-writing",
@@ -1887,7 +1906,8 @@
       "chatgpt-vs-claude",
       "chatgpt-vs-gemini",
       "grammarly-vs-claude"
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "clickup-vs-linear",
@@ -1981,7 +2001,8 @@
       "clickup-vs-asana",
       "notion-vs-clickup",
       "monday-vs-clickup"
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "descript-vs-riverside",
@@ -2073,7 +2094,8 @@
     "relatedComparisons": [
       "runway-vs-descript",
       "heygen-vs-synthesia"
-    ]
+    ],
+    "vsCategory": "video-audio"
   },
   {
     "slug": "runway-vs-descript",
@@ -2166,7 +2188,8 @@
     "relatedComparisons": [
       "descript-vs-riverside",
       "heygen-vs-synthesia"
-    ]
+    ],
+    "vsCategory": "video-audio"
   },
   {
     "slug": "claude-vs-chatgpt-for-coding",
@@ -2259,7 +2282,8 @@
       "chatgpt-vs-claude",
       "chatgpt-vs-gemini",
       "chatgpt-vs-claude-for-writing"
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   },
   {
     "slug": "notion-vs-obsidian-for-notes",
@@ -2352,7 +2376,8 @@
       "notion-vs-obsidian",
       "notion-vs-clickup",
       "notion-vs-monday"
-    ]
+    ],
+    "vsCategory": "project-management"
   },
   {
     "slug": "jasper-vs-copy-ai-vs-writesonic",
@@ -2445,7 +2470,8 @@
       "jasper-vs-copy-ai",
       "jasper-vs-writesonic",
       "chatgpt-vs-claude-for-writing"
-    ]
+    ],
+    "vsCategory": "writing"
   },
   {
     "slug": "grammarly-vs-claude",
@@ -2538,6 +2564,7 @@
       "grammarly-vs-chatgpt",
       "grammarly-vs-quillbot",
       "chatgpt-vs-claude-for-writing"
-    ]
+    ],
+    "vsCategory": "ai-assistants"
   }
 ]

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { comparisons, getToolById } from "@/lib/tools";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import VSFilter from "@/components/VSFilter";
 
 export const metadata: Metadata = {
   title: "AI Tool Comparisons (2026) — Honest Side-by-Side Reviews | Stack Pick",
@@ -15,6 +16,23 @@ export const metadata: Metadata = {
   },
 };
 
+const FEATURED_SLUGS = [
+  "chatgpt-vs-claude",
+  "chatgpt-vs-gemini",
+  "notion-vs-clickup",
+  "monday-vs-clickup",
+  "midjourney-vs-dall-e",
+  "grammarly-vs-quillbot",
+];
+
+const CATEGORIES = [
+  { id: "ai-assistants",    label: "AI Assistants",      icon: "🤖" },
+  { id: "writing",          label: "Writing",             icon: "✍️" },
+  { id: "project-management", label: "Project Management", icon: "📋" },
+  { id: "image-ai",         label: "Image AI",            icon: "🎨" },
+  { id: "video-audio",      label: "Video & Audio",       icon: "🎬" },
+];
+
 export default function VSIndexPage() {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -25,88 +43,83 @@ export default function VSIndexPage() {
     ],
   };
 
+  // Build serialisable cards for the client component
+  type CardType = {
+    slug: string; title: string; tool1Name: string; tool2Name: string;
+    winnerName: string | null; winnerReason: string; vsCategory: string; isFeatured: boolean;
+  };
+  const cards: CardType[] = comparisons
+    .map((c): CardType | null => {
+      const tool1 = getToolById(c.tool1Id);
+      const tool2 = getToolById(c.tool2Id);
+      if (!tool1 || !tool2) return null;
+      const winner = c.winner === c.tool1Id ? tool1 : tool2;
+      return {
+        slug: c.slug,
+        title: c.title,
+        tool1Name: tool1.name,
+        tool2Name: tool2.name,
+        winnerName: winner?.name ?? null,
+        winnerReason: c.winnerReason,
+        vsCategory: c.vsCategory ?? "other",
+        isFeatured: FEATURED_SLUGS.includes(c.slug),
+      };
+    })
+    .filter((c): c is CardType => c !== null);
+
   return (
     <>
       <SchemaMarkup schema={[breadcrumbSchema]} />
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-400 mb-6">
-          <Link href="/" className="hover:text-primary transition-colors">
-            Home
-          </Link>
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
           {" → "}
           <span className="text-gray-600">Compare</span>
         </nav>
 
         {/* Header */}
-        <div className="mb-10">
+        <div className="mb-8">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xs bg-primary-light text-primary font-semibold px-2 py-1 rounded-full uppercase tracking-wide">
-              Comparisons
+              {comparisons.length} comparisons
             </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             AI Tool Comparisons (2026)
           </h1>
-          <p className="text-lg text-gray-500">
+          <p className="text-lg text-gray-500 max-w-2xl">
             Honest, side-by-side comparisons. No sponsored rankings. Clear verdicts on which tool actually fits your workflow.
           </p>
         </div>
 
-        {/* Comparisons Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {comparisons.map((comparison) => {
-            const tool1 = getToolById(comparison.tool1Id);
-            const tool2 = getToolById(comparison.tool2Id);
-            const winner = comparison.winner === comparison.tool1Id ? tool1 : tool2;
-            if (!tool1 || !tool2) return null;
-
+        {/* Category stat pills */}
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-10">
+          {CATEGORIES.map((cat) => {
+            const count = comparisons.filter((c) => c.vsCategory === cat.id).length;
             return (
-              <Link
-                key={comparison.slug}
-                href={`/vs/${comparison.slug}`}
-                className="group border border-gray-200 rounded-xl p-6 hover:border-primary hover:shadow-md transition-all bg-white"
+              <div
+                key={cat.id}
+                className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-center"
               >
-                {/* Tools */}
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="font-semibold text-gray-900 text-lg group-hover:text-primary transition-colors">
-                    {tool1.name}
-                  </span>
-                  <span className="text-gray-400 font-medium">vs</span>
-                  <span className="font-semibold text-gray-900 text-lg group-hover:text-primary transition-colors">
-                    {tool2.name}
-                  </span>
-                </div>
-
-                {/* Winner badge */}
-                {winner && (
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs bg-green-50 text-green-700 font-semibold px-2 py-0.5 rounded-full border border-green-200">
-                      Winner: {winner.name}
-                    </span>
-                  </div>
-                )}
-
-                {/* Winner reason */}
-                <p className="text-sm text-gray-500 leading-relaxed mb-4">
-                  {comparison.winnerReason}
-                </p>
-
-                {/* CTA */}
-                <div className="flex items-center gap-1 text-primary text-sm font-semibold">
-                  Read comparison
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </Link>
+                <span className="text-xl block mb-1">{cat.icon}</span>
+                <p className="text-xs font-semibold text-gray-700 leading-tight">{cat.label}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{count} comparisons</p>
+              </div>
             );
           })}
         </div>
 
+        {/* Filter + grid — client component */}
+        <VSFilter
+          comparisons={cards}
+          categories={CATEGORIES}
+          featuredSlugs={FEATURED_SLUGS}
+        />
+
         {/* Trust bar */}
-        <div className="border-t border-gray-100 pt-8 text-center">
+        <div className="border-t border-gray-100 pt-8 mt-12 text-center">
           <p className="text-sm text-gray-400">
             Every comparison is written by a human. No sponsored rankings. No AI-generated verdicts.{" "}
             <Link href="/about" className="text-primary hover:underline">

@@ -45,6 +45,7 @@ export interface Comparison {
   useCases: { useCase: string; winner: string; reason: string }[];
   verdict: string;
   faq: { question: string; answer: string }[];
+  vsCategory?: string;
 }
 
 export interface BestOf {
