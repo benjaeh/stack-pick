@@ -23,6 +23,8 @@ const FEATURED_SLUGS = [
   "monday-vs-clickup",
   "midjourney-vs-dall-e",
   "grammarly-vs-quillbot",
+  "canva-ai-vs-midjourney",
+  "perplexity-vs-claude",
 ];
 
 const CATEGORIES = [
