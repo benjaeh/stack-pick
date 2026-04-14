@@ -26,24 +26,24 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+          <Link href="/" className="flex items-center flex-shrink-0" onClick={() => setIsOpen(false)}>
             <Image
               src="/images/logo-horizontal.svg"
               alt="Stack Pick"
-              width={180}
-              height={36}
+              width={160}
+              height={32}
               priority
               unoptimized
             />
           </Link>
 
           {/* Desktop nav links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-5 flex-shrink-0">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors ${
+                className={`text-sm font-medium whitespace-nowrap transition-colors ${
                   pathname?.startsWith(link.href)
                     ? "text-primary"
                     : "text-gray-600 hover:text-primary"
@@ -52,15 +52,17 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <SearchBar
-              comparisons={comparisonsData as Comparison[]}
-              tools={toolsData as Tool[]}
-              bestofs={bestofData as BestOf[]}
-            />
+            <div className="w-44 flex-shrink-0">
+              <SearchBar
+                comparisons={comparisonsData as Comparison[]}
+                tools={toolsData as Tool[]}
+                bestofs={bestofData as BestOf[]}
+              />
+            </div>
           </div>
 
           {/* Right side: CTA + hamburger */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-shrink-0">
             <Link
               href="/#newsletter"
               className="bg-primary hover:bg-primary-dark text-white font-medium px-4 py-2 rounded-lg text-sm transition-colors"

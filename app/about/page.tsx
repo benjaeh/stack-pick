@@ -51,9 +51,9 @@ export default function AboutPage() {
           {[
             {
               step: "1",
-              title: "We actually use the tools",
+              title: "We research every tool in depth",
               description:
-                "Every tool reviewed on Stack Pick has been tested for real-world use cases — not just feature specs scraped from marketing pages.",
+                "Every tool on Stack Pick has been researched across free tiers, feature documentation, pricing pages, community feedback, and real prompt testing — the same outputs you see in our AI vs AI section. We do not copy vendor marketing copy.",
             },
             {
               step: "2",
