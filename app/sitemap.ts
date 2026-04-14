@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { comparisons, bestofs } from "@/lib/tools";
+import { tools, comparisons, bestofs } from "@/lib/tools";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://stack-pick.com";
 
@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/compare`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -45,5 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...comparisonPages, ...bestofPages];
+  const toolPages: MetadataRoute.Sitemap = tools.map((t) => ({
+    url: `${BASE_URL}/tools/${t.slug}`,
+    lastModified: new Date(t.lastUpdated),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...toolPages, ...comparisonPages, ...bestofPages];
 }
