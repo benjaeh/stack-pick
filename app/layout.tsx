@@ -41,7 +41,7 @@ export default function RootLayout({
         {/* Impact.com verification */}
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-expect-error — Impact.com requires non-standard 'value' attribute */}
-        <meta name="impact-site-verification" value="1ff62df6-0590-46c2-b938-98be20668cd4" />
+        <meta name="impact-site-verification" value="fccb0b72-2d66-4b46-b208-44350b2052da" />
         {/* Google Analytics */}
         {GA_ID && GA_ID !== "YOUR_GA_ID_HERE" && (
           <>
