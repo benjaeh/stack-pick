@@ -123,5 +123,130 @@
         "generatedAt": "2026-04-11"
       }
     ]
+  },
+  {
+    "id": "linkedin-post-freelancer",
+    "promptText": "Write a short LinkedIn post for a freelancer announcing they have availability for new client projects. Authentic, not cringe.",
+    "category": "Social Media",
+    "tools": [
+      {
+        "toolId": "chatgpt",
+        "model": "GPT-5.4",
+        "output": "Opening up my calendar for new client projects this quarter.\n\nOver the last 3 years I have helped SaaS companies, agencies, and founders with content strategy and writing. I bring strategic thinking, clear communication, and a bias toward getting things done without hand-holding.\n\nWhat I am looking for:\n→ Content strategy and writing projects\n→ Marketing consulting engagements\n→ Long-term retainer relationships\n\nIf you are building something worth writing about, let's talk. DM me or drop your project details in the comments.\n\n#Freelance #ContentStrategy #OpenToWork",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "claude",
+        "model": "Claude Sonnet 4.6",
+        "output": "I have capacity for a couple of new client projects starting next month.\n\nI work with founders and marketing teams on content strategy and writing — the kind of work where clarity actually matters. No fluff, no six-week timelines for a landing page.\n\nIf you need someone who asks better questions before writing a single word, I might be your person.\n\nWhat's on your plate? Happy to have a quick 20-minute call to see if there's a fit.",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "gemini",
+        "model": "Gemini 2.5 Flash",
+        "output": "Exciting news! After successfully completing a recent project, I am thrilled to announce that I now have availability for new client partnerships! 🎉\n\nI specialize in content strategy and copywriting for growing companies, helping them communicate their value clearly and convert more visitors into customers.\n\nAre you looking for a dedicated freelancer who delivers results? I would love to connect and explore how we can work together toward your goals!\n\nDrop a comment below or send me a message to schedule a discovery call! 📩\n\n#Freelancer #ContentStrategy #OpenForWork #Marketing #CopywritingServices",
+        "generatedAt": "2026-04-14"
+      }
+    ]
+  },
+  {
+    "id": "instagram-caption-launch",
+    "promptText": "Write an Instagram caption announcing a new digital product launch. Include a call to action. Keep it under 150 words.",
+    "category": "Social Media",
+    "tools": [
+      {
+        "toolId": "chatgpt",
+        "model": "GPT-5.4",
+        "output": "It's finally here.\n\nI have been building this quietly for six months and I am genuinely proud of it. [Product Name] is live — designed for people who [target audience description].\n\nI built it because [honest reason]. Not to disrupt anything. Just to solve a problem I kept running into and figured you might too.\n\nLink in bio. First 100 buyers get [bonus]. Tell me what you think. 👇",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "claude",
+        "model": "Claude Sonnet 4.6",
+        "output": "The thing I have been quietly building is out.\n\n[Product Name] — [one-line description of what it actually does].\n\nI built it because [honest reason]. If that problem sounds familiar, it is probably for you. If not, it is probably not — and that is fine.\n\nPriced at [price]. Link in bio.\n\nI would genuinely love to hear from the first people who use it. What works, what does not, what you wish it did. DM me or drop a comment.",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "gemini",
+        "model": "Gemini 2.5 Flash",
+        "output": "✨ BIG ANNOUNCEMENT ✨\n\nAfter months of hard work and dedication, I am SO thrilled to finally introduce [Product Name] to the world! 🚀\n\nThis is for all the [target audience] out there who are tired of [pain point]. I created [Product Name] to help you achieve [benefit 1], [benefit 2], and [benefit 3] — all in one place! 💪\n\n🎁 LAUNCH SPECIAL: Get 20% off for the next 48 hours only!\n👉 Link in bio to grab it now!\n\nDouble tap if you are excited! 💫 Tag a friend who needs this!\n\n#NewLaunch #SmallBusiness #Entrepreneur #DigitalProduct",
+        "generatedAt": "2026-04-14"
+      }
+    ]
+  },
+  {
+    "id": "landing-page-headline",
+    "promptText": "Write a headline and subheadline for an AI writing tool aimed at content creators and marketers.",
+    "category": "Marketing",
+    "tools": [
+      {
+        "toolId": "chatgpt",
+        "model": "GPT-5.4",
+        "output": "Headline: Write Like You Think. Publish Like You Mean It.\n\nSubheadline: The AI writing tool built for content creators who have something to say — not just something to produce. From first idea to final draft, faster and with more of your voice intact.",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "claude",
+        "model": "Claude Sonnet 4.6",
+        "output": "Headline: The first draft is the hard part. We handle it.\n\nSubheadline: An AI writing tool that matches your voice, understands your audience, and produces content worth publishing — without the generic output that sounds like everyone else.",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "gemini",
+        "model": "Gemini 2.5 Flash",
+        "output": "Headline: Supercharge Your Content Creation with AI\n\nSubheadline: Create high-quality, engaging content for your blog, social media, and marketing campaigns in minutes. Join thousands of creators and marketers who are writing smarter, not harder.",
+        "generatedAt": "2026-04-14"
+      }
+    ]
+  },
+  {
+    "id": "email-subject-lines",
+    "promptText": "Give me 5 email subject lines for a promotional campaign offering 20% off a SaaS tool.",
+    "category": "Marketing",
+    "tools": [
+      {
+        "toolId": "chatgpt",
+        "model": "GPT-5.4",
+        "output": "1. Your 20% off expires at midnight (no extension)\n2. We do not do sales often. This is one.\n3. Quick math: [full price] → [sale price]. Today only.\n4. Last chance — 20% off ends tonight\n5. The sale nobody asked us to run (but here we are)",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "claude",
+        "model": "Claude Sonnet 4.6",
+        "output": "1. 20% off. No coupon code. No fine print.\n2. This is the email where we ask you to buy something (20% off, today only)\n3. Not a trick subject line. Genuinely 20% off.\n4. The sale ends [date]. After that, full price.\n5. One less reason to wait — 20% off starts now",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "gemini",
+        "model": "Gemini 2.5 Flash",
+        "output": "1. 🎉 Flash Sale! Save 20% on [Tool Name] — Today Only!\n2. Exclusive Offer Inside: 20% Off Just for You! ⚡\n3. Do Not Miss Out! Your 20% Discount Expires Soon ⏰\n4. Unlock Your 20% Savings Before It Is Gone! 💰\n5. Your Special 20% Off Deal Awaits — Act Fast! 🎁",
+        "generatedAt": "2026-04-14"
+      }
+    ]
+  },
+  {
+    "id": "javascript-slugify",
+    "promptText": "Write a JavaScript function that converts a string to a URL-friendly slug (lowercase, hyphens, no special characters).",
+    "category": "Coding",
+    "tools": [
+      {
+        "toolId": "chatgpt",
+        "model": "GPT-5.4",
+        "output": "function slugify(str) {\n  return str\n    .toLowerCase()\n    .trim()\n    .replace(/[^ws-]/g, \"\")\n    .replace(/[s_-]+/g, \"-\")\n    .replace(/^-+|-+$/g, \"\");\n}\n\n// Examples:\n// slugify(\"Hello World!\")         → \"hello-world\"\n// slugify(\"  React & TypeScript  \") → \"react-typescript\"\n// slugify(\"café au lait\")          → \"caf-au-lait\"",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "claude",
+        "model": "Claude Sonnet 4.6",
+        "output": "function slugify(str) {\n  return str\n    .toLowerCase()\n    .normalize(\"NFD\")                  // decompose accented characters\n    .replace(/[̀-ͯ]/g, \"\")  // strip diacritics\n    .replace(/[^a-z0-9s-]/g, \"\")     // remove non-alphanumeric\n    .trim()\n    .replace(/s+/g, \"-\")             // spaces → hyphens\n    .replace(/-+/g, \"-\");             // collapse consecutive hyphens\n}\n\n// \"Café au lait\"    → \"cafe-au-lait\"\n// \"Hello, World!\"   → \"hello-world\"\n// \"  multi  spaces\" → \"multi-spaces\"",
+        "generatedAt": "2026-04-14"
+      },
+      {
+        "toolId": "gemini",
+        "model": "Gemini 2.5 Flash",
+        "output": "/**\n * Converts a string to a URL-friendly slug.\n * @param {string} str - The input string to slugify.\n * @returns {string} The slugified string.\n */\nfunction slugify(str) {\n  if (!str) return \"\";\n  return str\n    .toString()\n    .toLowerCase()\n    .trim()\n    .replace(/s+/g, \"-\")        // Replace spaces with -\n    .replace(/[^w-]+/g, \"\")    // Remove non-word chars\n    .replace(/--+/g, \"-\")     // Replace multiple - with single -\n    .replace(/^-+/, \"\")          // Trim - from start\n    .replace(/-+$/, \"\");         // Trim - from end\n}\n\nconsole.log(slugify(\"Hello World\"));          // \"hello-world\"\nconsole.log(slugify(\"Special@#\")); // \"specialcharacters\"",
+        "generatedAt": "2026-04-14"
+      }
+    ]
   }
 ]

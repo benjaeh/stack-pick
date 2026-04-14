@@ -24,7 +24,7 @@ interface AiOutput {
 
 const aiOutputs: AiOutput[] = aiOutputsData as AiOutput[];
 
-const categories = ["All", "Writing", "Explanation", "Creative", "Email", "Summarization"];
+const categories = ["All", "Writing", "Social Media", "Marketing", "Coding", "Email", "Creative", "Explanation", "Summarization"];
 
 // Build a flat map of toolId → { name, website, affiliateUrl } for the client component
 const toolsMap = Object.fromEntries(
