@@ -1,17 +1,18 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { comparisons, getToolById } from "@/lib/tools";
+import { tools, comparisons, getToolById } from "@/lib/tools";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import VSFilter from "@/components/VSFilter";
+import ToolComparison from "@/components/ToolComparison";
 
 export const metadata: Metadata = {
-  title: "AI Tool Comparisons (2026) — Honest Side-by-Side Reviews | Stack Pick",
+  title: "Compare AI Tools (2026) — Honest Side-by-Side Reviews | Stack Pick",
   description:
-    "Honest, in-depth comparisons of the most popular AI tools and software. No sponsored rankings. Real pros, cons, and clear verdicts.",
+    "Compare any AI tools side-by-side, or browse 35 honest curated comparisons. No sponsored rankings. Real pros, cons, and clear verdicts.",
   openGraph: {
-    title: "AI Tool Comparisons (2026) — Stack Pick",
+    title: "Compare AI Tools (2026) — Stack Pick",
     description:
-      "Honest side-by-side comparisons of the best AI tools. Find out which tool actually fits your workflow.",
+      "Build your own comparison or browse curated reviews. Find out which tool actually fits your workflow.",
     url: "https://stack-pick.com/vs",
   },
 };
@@ -28,11 +29,11 @@ const FEATURED_SLUGS = [
 ];
 
 const CATEGORIES = [
-  { id: "ai-assistants",    label: "AI Assistants",      icon: "🤖" },
-  { id: "writing",          label: "Writing",             icon: "✍️" },
-  { id: "project-management", label: "Project Management", icon: "📋" },
-  { id: "image-ai",         label: "Image AI",            icon: "🎨" },
-  { id: "video-audio",      label: "Video & Audio",       icon: "🎬" },
+  { id: "ai-assistants",      label: "AI Assistants",      icon: "🤖" },
+  { id: "writing",            label: "Writing",             icon: "✍️" },
+  { id: "project-management", label: "Project Management",  icon: "📋" },
+  { id: "image-ai",           label: "Image AI",            icon: "🎨" },
+  { id: "video-audio",        label: "Video & Audio",       icon: "🎬" },
 ];
 
 export default function VSIndexPage() {
@@ -45,7 +46,7 @@ export default function VSIndexPage() {
     ],
   };
 
-  // Build serialisable cards for the client component
+  // Cards for VSFilter
   type CardType = {
     slug: string; title: string; tool1Name: string; tool2Name: string;
     winnerName: string | null; winnerReason: string; vsCategory: string; isFeatured: boolean;
@@ -69,6 +70,33 @@ export default function VSIndexPage() {
     })
     .filter((c): c is CardType => c !== null);
 
+  // Serialisable data for ToolComparison
+  const toolsForSelector = tools.map((t) => ({
+    id: t.id,
+    name: t.name,
+    slug: t.slug,
+    category: t.category,
+    tagline: t.tagline,
+    pricing: t.pricing,
+    hasFree: t.hasFree,
+    startingPrice: t.startingPrice,
+    rating: t.rating,
+    bestFor: t.bestFor,
+    pros: t.pros,
+    cons: t.cons,
+    notGoodAt: t.notGoodAt,
+    whoShouldNotUse: t.whoShouldNotUse ?? "",
+  }));
+
+  const comparisonsForSelector = comparisons.map((c) => ({
+    slug: c.slug,
+    tool1Id: c.tool1Id,
+    tool2Id: c.tool2Id,
+    title: c.title,
+    winner: c.winner,
+    winnerReason: c.winnerReason,
+  }));
+
   return (
     <>
       <SchemaMarkup schema={[breadcrumbSchema]} />
@@ -82,21 +110,36 @@ export default function VSIndexPage() {
         </nav>
 
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-10">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xs bg-primary-light text-primary font-semibold px-2 py-1 rounded-full uppercase tracking-wide">
-              {comparisons.length} comparisons
+              {tools.length} tools · {comparisons.length} comparisons
             </span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            AI Tool Comparisons (2026)
+            Compare AI Tools (2026)
           </h1>
           <p className="text-lg text-gray-500 max-w-2xl">
-            Honest, side-by-side comparisons. No sponsored rankings. Clear verdicts on which tool actually fits your workflow.
+            Build your own comparison or browse our curated reviews. No sponsored rankings. Clear verdicts on which tool actually fits your workflow.
           </p>
         </div>
 
-        {/* Category stat pills */}
+        {/* ── SECTION 1: Build your own comparison ──────────────────────── */}
+        <ToolComparison tools={toolsForSelector} comparisons={comparisonsForSelector} />
+
+        {/* ── SECTION DIVIDER ───────────────────────────────────────────── */}
+        <div className="relative my-12">
+          <div className="absolute inset-0 flex items-center">
+            <div className="w-full border-t border-gray-200" />
+          </div>
+          <div className="relative flex justify-center">
+            <span className="bg-white px-4 text-sm font-bold text-gray-400 uppercase tracking-widest">
+              Curated Comparisons
+            </span>
+          </div>
+        </div>
+
+        {/* ── SECTION 2: Category stat pills ────────────────────────────── */}
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-10">
           {CATEGORIES.map((cat) => {
             const count = comparisons.filter((c) => c.vsCategory === cat.id).length;

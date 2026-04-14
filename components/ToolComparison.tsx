@@ -514,7 +514,7 @@ function SmartInsights({
                 className="flex items-center justify-between group"
               >
                 <span className="text-sm text-gray-700 group-hover:text-primary transition-colors">
-                  {t1.name} vs {t2.name} — full human-written comparison
+                  {t1.name} vs {t2.name}
                 </span>
                 <span className="text-primary text-sm font-semibold group-hover:underline shrink-0 ml-4">
                   Read →
